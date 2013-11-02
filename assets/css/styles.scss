@@ -13,8 +13,16 @@ $border-big: 15px solid #333;
 
 body{
 	font-family: "Futura", "Avenir", "Open Sans", sans-serif;
-	background-color: #fff;
-	// background: #2763cd;
+	// background-color: #fff;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #ffffff 0%, #ffffff 11%, #f28b66 42%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(11%,#ffffff), color-stop(42%,#f28b66));
+	background: -webkit-linear-gradient(-45deg,  #ffffff 0%,#ffffff 11%,#f28b66 42%);
+	background: -o-linear-gradient(-45deg,  #ffffff 0%,#ffffff 11%,#f28b66 42%);
+	background: -ms-linear-gradient(-45deg,  #ffffff 0%,#ffffff 11%,#f28b66 42%);
+	background: linear-gradient(135deg,  #ffffff 0%,#ffffff 11%,#f28b66 42%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f28b66',GradientType=1 );
+		// background: #2763cd;
 	// background: -moz-linear-gradient(-45deg,  #2763cd 0%, #477acc 100%);
 	// background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2763cd), color-stop(100%,#477acc));
 	// background: -webkit-linear-gradient(-45deg,  #2763cd 0%,#477acc 100%);
@@ -115,7 +123,7 @@ h1.splash-h1{
 	border: 2px solid $gray;
 	display: inline-block;
 	padding: 10px 20px 10px 20px;
-	margin: 100px 0px 50px 0px;
+	margin: 100px 0px 20px 0px;
 }
 .inner-work{
 	max-width: 960px;
@@ -151,7 +159,7 @@ h1.splash-h1{
 }
 .work-link{
 	text-align: center;
-	margin: 30px 0 0 0;
+	margin: 50px 0 20px 0;
 	a{
 		text-decoration: none;
 		color: #232932;
@@ -159,6 +167,11 @@ h1.splash-h1{
 		font-size: 12pt;
 		border: 2px solid #232932;
 		padding: 10px 15px 10px 15px;
+		@extend .easing;
+		&:hover{
+			@extend .easing;
+			background-color: #ddd;
+		}
 	}
 }
 .alts{
@@ -253,7 +266,7 @@ hr.fatty{
 	@extend .work-header;
 	color: #7b2d11;
 	border-color: #7b2d11;
-	margin: 0px 0px 50px 0;
+	margin: 0px 0px 20px 0;
 }
 .services-list{
 	margin: 30px 0 0 0;
@@ -487,5 +500,23 @@ hr.orange{
 	}
 	h1.splash-h1{
 		font-size: 13pt;
+	}
+}
+@media all and (max-width: 687px){
+	.work-section-expo{
+		padding: 0px 30px 0px 30px;
+	}
+	.work-section-title{
+		text-transform: uppercase;
+		color: #232932;
+		text-align: center;
+		font-size: 15pt;
+		border-bottom: 2px solid #232932;
+		font-weight: bold;
+		padding: 20px 30px 30px 30px;
+	}
+	.rej-title{
+		padding: 20px 30px 30px 30px;
+		font-size: 15pt;
 	}
 }

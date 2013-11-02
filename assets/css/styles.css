@@ -162,7 +162,15 @@ body {
     padding-right: 20px; } }
 body {
   font-family: "Futura", "Avenir", "Open Sans", sans-serif;
-  background-color: #fff;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, white), color-stop(11%, white), color-stop(42%, #f28b66));
+  background: -webkit-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
+  background: -o-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
+  background: -ms-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
+  background: linear-gradient(135deg, white 0%, white 11%, #f28b66 42%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f28b66',GradientType=1 );
   border-left: 15px solid #333333;
   border-right: 15px solid #333333;
   border-bottom: 15px solid #333333;
@@ -179,7 +187,7 @@ body {
 .shadow {
   box-shadow: 1px 2px 10px #1d4da1; }
 
-.easing, .my-name a, .my-name a:hover, .inquire a, .inquire a:hover, .header-link a, .header-link a:hover, .footer-list li, .footer-list li:hover {
+.easing, .my-name a, .my-name a:hover, .work-link a, .work-link a:hover, .inquire a, .inquire a:hover, .header-link a, .header-link a:hover, .footer-list li, .footer-list li:hover {
   -moz-transition: all 600ms ease;
   -webkit-transition: all 600ms ease;
   -o-transition: all 600ms ease;
@@ -247,7 +255,7 @@ h1.splash-h1 {
   border: 2px solid #555555;
   display: inline-block;
   padding: 10px 20px 10px 20px;
-  margin: 100px 0px 50px 0px; }
+  margin: 100px 0px 20px 0px; }
 
 .inner-work, .inner-services {
   max-width: 960px;
@@ -281,7 +289,7 @@ h1.splash-h1 {
 
 .work-link {
   text-align: center;
-  margin: 30px 0 0 0; }
+  margin: 50px 0 20px 0; }
   .work-link a {
     text-decoration: none;
     color: #232932;
@@ -289,6 +297,8 @@ h1.splash-h1 {
     font-size: 12pt;
     border: 2px solid #232932;
     padding: 10px 15px 10px 15px; }
+    .work-link a:hover {
+      background-color: #ddd; }
 
 .alts {
   margin: 50px 0 0 0;
@@ -369,7 +379,7 @@ hr.fatty {
 .services-h1 {
   color: #7b2d11;
   border-color: #7b2d11;
-  margin: 0px 0px 50px 0; }
+  margin: 0px 0px 20px 0; }
 
 .services-list {
   margin: 30px 0 0 0; }
@@ -557,3 +567,19 @@ hr.orange {
 
   h1.splash-h1 {
     font-size: 13pt; } }
+@media all and (max-width: 687px) {
+  .work-section-expo {
+    padding: 0px 30px 0px 30px; }
+
+  .work-section-title {
+    text-transform: uppercase;
+    color: #232932;
+    text-align: center;
+    font-size: 15pt;
+    border-bottom: 2px solid #232932;
+    font-weight: bold;
+    padding: 20px 30px 30px 30px; }
+
+  .rej-title {
+    padding: 20px 30px 30px 30px;
+    font-size: 15pt; } }
