@@ -199,6 +199,7 @@ hr.fatty{
 	top: 111px;
 	position: fixed;
 	z-index: 3;
+	line-height: 1.3;
 	a{
 		width: 410px;
 		background-color: #274578;
@@ -210,6 +211,22 @@ hr.fatty{
 		&:hover{
 			@extend .easing;
 			background-color: #f26b5e;
+		}
+	}
+}
+.reading{
+	@extend .inquire;
+	top: 210px;
+	a{
+		background-color: transparent;
+		border: 2px solid #f26b5e;
+		color: #f26b5e;
+		&:hover{
+			background-color: #f4f4f4;
+		}
+		span{
+			color: #333;
+			font-weight: bold;
 		}
 	}
 }
@@ -260,7 +277,7 @@ hr.fatty{
 }
 .services{
 	background-color: #f28b66;
-	padding: 50px 0px 50px 0px;
+	padding: 75px 0px 75px 0px;
 }
 .services-h1{
 	@extend .work-header;
@@ -284,6 +301,11 @@ hr.orange{
 	height: 3px;
 	border: 0px;
 }
+.latest-tweet{
+	position: absolute;
+	top: 220px;
+	right: 15px;
+}
 @media all and (max-width: 1100px){
 	.inquire{
 		float: right;
@@ -297,7 +319,7 @@ hr.orange{
 			background-color: #274578;
 			color: #fff;
 			text-decoration: none;
-			padding: 40px 20px 40px 20px;
+			padding: 38px 20px 38px 20px;
 			display: block;
 		}
 	}
@@ -316,6 +338,25 @@ hr.orange{
 			padding: 40px 20px 40px 20px;
 			display: block;
 		}
+	}
+	.reading{
+		@extend .inquire;
+		top: 110px;
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		a{
+			width: 100%;
+			background-color: transparent;
+			border: 2px solid #f26b5e;
+			color: #f26b5e;
+			&:hover{
+				background-color: #ddd;
+			}
+		}
+	}
+	.splash{
+		padding-top: 180px;
 	}
 }
 @media all and (max-width: 853px){
@@ -358,6 +399,25 @@ hr.orange{
 		position: relative;
 		border-left: 0px;
 		border-right: 0px;
+	}
+	.reading{
+		@extend .inquire;
+		top: 208px;
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		a{
+			width: 100%;
+			background-color: transparent;
+			border: 2px solid #f26b5e;
+			color: #f26b5e;
+			&:hover{
+				background-color: #ddd;
+			}
+		}
+	}
+	.splash{
+		padding-top: 180px;
 	}
 }
 @media all and (max-width: 644px){
@@ -406,6 +466,25 @@ hr.orange{
 			width: 100%;
 			padding: 39px 20px 40px 20px;
 		}
+	}
+	.reading{
+		@extend .inquire;
+		top: 200px;
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		a{
+			width: 100%;
+			background-color: #fff;
+			border: 2px solid #f26b5e;
+			color: #f26b5e;
+			&:hover{
+				background-color: #ddd;
+			}
+		}
+	}
+	.splash{
+		padding-top: 180px;
 	}
 }
 @media all and (max-width: 642px){
@@ -500,6 +579,28 @@ hr.orange{
 	}
 	h1.splash-h1{
 		font-size: 13pt;
+	}
+	.reading{
+		@extend .inquire;
+		top: 198px;
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		a{
+			width: 100%;
+			background-color: #fff;
+			border-top: 2px solid #f26b5e;
+			border-bottom: 2px solid #f26b5e;
+			border-left: 0px;
+			border-right: 0px;
+			color: #f26b5e;
+			&:hover{
+				background-color: #f4f4f4;
+			}
+		}
+	}
+	.splash{
+		padding-top: 150px;
 	}
 }
 @media all and (max-width: 687px){

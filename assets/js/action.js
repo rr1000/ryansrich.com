@@ -15,6 +15,7 @@ $(document).ready(function(){
 	$nav = $('#nav-main');
 	$link = $("#nav-link");
 	$inq = $("#inq-link");
+	$status = $(".reading");
 
 	/* Define the scroll state */
 	var scrollState = 'top';
@@ -38,7 +39,14 @@ $(document).ready(function(){
 
 			/* Animate contact link */
 			$inq.stop().animate({
-				top: "15px",
+				top: "10px",
+				opacity: "0.5"
+			}, 500);
+
+			/* Hide status link */
+			$status.stop().animate({
+				right: "-410px",
+				top: "110px",
 				opacity: "0.5"
 			}, 500);
 
@@ -48,6 +56,11 @@ $(document).ready(function(){
 					top: "15px",
 					right: "15px",
 					opacity: "0.5"
+				}, 500);
+
+				$status.stop().animate({
+					top: "158px",
+					opacity: "1.0"
 				}, 500);
 			}
 
@@ -85,6 +98,13 @@ $(document).ready(function(){
 				opacity: "1.0"
 			}, 500);
 
+			/* Reset the state of the status link */
+			$status.stop().animate({
+				right: "15px",
+				top: "210px",
+				opacity: "1.0"
+			}, 500);
+
 			/* If the window size is less than 1101 animate differently */
 			if ($(window).width() < 1101){
 				$inq.stop().animate({
@@ -98,6 +118,11 @@ $(document).ready(function(){
 			if ($(window).width() < 626){
 				$inq.stop().animate({
 					top: "109px",
+					opacity: "1.0"
+				}, 500);
+
+				$status.stop().animate({
+					top: "198px",
 					opacity: "1.0"
 				}, 500);
 			}
