@@ -162,18 +162,7 @@ body {
     padding-right: 20px; } }
 body {
   font-family: "Futura", "Avenir", "Open Sans", sans-serif;
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, white), color-stop(11%, white), color-stop(42%, #f28b66));
-  background: -webkit-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
-  background: -o-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
-  background: -ms-linear-gradient(-45deg, white 0%, white 11%, #f28b66 42%);
-  background: linear-gradient(135deg, white 0%, white 11%, #f28b66 42%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f28b66',GradientType=1 );
-  border-left: 15px solid #333333;
-  border-right: 15px solid #333333;
-  border-bottom: 15px solid #333333;
+  background-color: #fff;
   top: 0px; }
 
 ::selection {
@@ -187,20 +176,11 @@ body {
 .shadow {
   box-shadow: 1px 2px 10px #1d4da1; }
 
-.easing, .my-name a, .my-name a:hover, .work-link a, .work-link a:hover, .inquire a, .reading a, .inquire a:hover, .header-link a, .header-link a:hover, .footer-list li, .footer-list li:hover {
+.easing, ul.top-nav li a, ul.top-nav li a:hover, .my-name a, .my-name a:hover, h1.splash-h1 a, .inquire a, .inquire a:hover, .header-link a, .header-link a:hover, .footer-list li, .footer-list li:hover {
   -moz-transition: all 600ms ease;
   -webkit-transition: all 600ms ease;
   -o-transition: all 600ms ease;
   transition: all 600ms ease; }
-
-.top-border {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  left: 0px;
-  background-color: #333;
-  height: 15px;
-  z-index: 5; }
 
 .container {
   width: 100%;
@@ -209,14 +189,32 @@ body {
 
 .main-header {
   position: fixed;
-  min-height: 20px;
+  height: 98px;
   padding: 0px 0px 0px 10px;
   left: 0px;
   right: 0px;
-  top: 15px;
-  background-color: #5693ff;
-  border-right: 15px solid #333333;
-  border-left: 15px solid #333333; }
+  top: 0px;
+  background-color: #5693ff; }
+
+ul.top-nav {
+  float: right;
+  padding: 0px;
+  margin: 0px; }
+  ul.top-nav li {
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    background-color: #555; }
+    ul.top-nav li:last-child {
+      background-color: #2763cd;
+      margin-left: -5px; }
+    ul.top-nav li a {
+      padding: 41px 20px 41px 20px;
+      display: block;
+      color: #fff;
+      text-decoration: none; }
+      ul.top-nav li a:hover {
+        background-color: #f26b5e;
+        color: #fff; }
 
 .my-name {
   font-size: 15pt;
@@ -243,6 +241,12 @@ h1.splash-h1 {
   margin: 50px 0px 0px 0px;
   max-width: 650px;
   padding: 0px 0px 0px 15px; }
+  h1.splash-h1 a {
+    text-decoration: none;
+    color: #f26b5e; }
+    h1.splash-h1 a:hover {
+      color: #26282a;
+      background-color: #f4f4f4; }
 
 .work {
   background-color: #fff;
@@ -255,7 +259,7 @@ h1.splash-h1 {
   border: 2px solid #555555;
   display: inline-block;
   padding: 10px 20px 10px 20px;
-  margin: 100px 0px 20px 0px; }
+  margin: 100px 0px 50px 0px; }
 
 .inner-work, .inner-services {
   max-width: 960px;
@@ -289,7 +293,7 @@ h1.splash-h1 {
 
 .work-link {
   text-align: center;
-  margin: 50px 0 20px 0; }
+  margin: 30px 0 0 0; }
   .work-link a {
     text-decoration: none;
     color: #232932;
@@ -297,8 +301,6 @@ h1.splash-h1 {
     font-size: 12pt;
     border: 2px solid #232932;
     padding: 10px 15px 10px 15px; }
-    .work-link a:hover {
-      background-color: #ddd; }
 
 .alts {
   margin: 50px 0 0 0;
@@ -319,34 +321,21 @@ hr.fatty {
   height: 3px;
   border: 0px; }
 
-.inquire, .reading {
+.inquire {
   float: right;
   right: 15px;
   top: 111px;
   position: fixed;
-  z-index: 3;
-  line-height: 1.3; }
-  .inquire a, .reading a {
+  z-index: 3; }
+  .inquire a {
     width: 410px;
     background-color: #274578;
     color: #fff;
     text-decoration: none;
     padding: 40px 30px 40px 30px;
     display: block; }
-    .inquire a:hover, .reading a:hover {
+    .inquire a:hover {
       background-color: #f26b5e; }
-
-.reading {
-  top: 210px; }
-  .reading a {
-    background-color: transparent;
-    border: 2px solid #f26b5e;
-    color: #f26b5e; }
-    .reading a:hover {
-      background-color: #f4f4f4; }
-    .reading a span {
-      color: #333;
-      font-weight: bold; }
 
 .header-link {
   float: right;
@@ -387,12 +376,12 @@ hr.fatty {
 
 .services {
   background-color: #f28b66;
-  padding: 75px 0px 75px 0px; }
+  padding: 50px 0px 50px 0px; }
 
 .services-h1 {
   color: #7b2d11;
   border-color: #7b2d11;
-  margin: 0px 0px 20px 0; }
+  margin: 0px 0px 50px 0; }
 
 .services-list {
   margin: 30px 0 0 0; }
@@ -406,265 +395,52 @@ hr.orange {
   height: 3px;
   border: 0px; }
 
-.latest-tweet {
-  position: absolute;
-  top: 220px;
-  right: 15px; }
-
-@media all and (max-width: 1100px) {
-  .inquire, .reading {
-    float: right;
-    right: 369px;
-    top: 15px;
-    position: fixed;
-    z-index: 3; }
-    .inquire a, .reading a {
-      font-size: 11pt;
-      width: 260px;
-      background-color: #274578;
-      color: #fff;
-      text-decoration: none;
-      padding: 38px 20px 38px 20px;
-      display: block; }
-
-  .header-link {
-    float: right;
-    right: 0px;
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 3; }
-    .header-link a {
-      font-size: 11pt;
-      width: 354px;
-      background-color: #80acf9;
-      color: #fff;
-      text-decoration: none;
-      padding: 40px 20px 40px 20px;
-      display: block; }
-
-  .reading {
-    top: 110px;
-    position: absolute;
-    left: 15px;
-    right: 15px; }
-    .reading a {
-      width: 100%;
-      background-color: transparent;
-      border: 2px solid #f26b5e;
-      color: #f26b5e; }
-      .reading a:hover {
-        background-color: #ddd; }
-
-  .splash {
-    padding-top: 180px; } }
 @media all and (max-width: 853px) {
-  .inquire, .reading {
-    float: left;
-    left: 0px;
-    top: 15px;
-    position: relative;
-    z-index: 3; }
-    .inquire a, .reading a {
-      font-size: 11pt;
-      width: 260px;
-      background-color: #274578;
-      color: #fff;
-      text-decoration: none;
-      padding: 40px 20px 40px 20px;
-      display: block; }
-
-  .header-link {
-    left: 0px;
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 3; }
-    .header-link a {
-      font-size: 11pt;
-      width: 354px;
-      background-color: #80acf9;
-      color: #fff;
-      text-decoration: none;
-      padding: 40px 20px 39px 20px;
-      display: block; }
-
   .splash {
     margin: 0px 0px 0px 0px;
-    padding: 100px 0px 100px 0px; }
+    padding: 30px 0px 100px 0px; }
 
   .main-header {
     position: relative;
     border-left: 0px;
-    border-right: 0px; }
-
-  .reading {
-    top: 208px;
-    position: absolute;
-    left: 15px;
-    right: 15px; }
-    .reading a {
-      width: 100%;
-      background-color: transparent;
-      border: 2px solid #f26b5e;
-      color: #f26b5e; }
-      .reading a:hover {
-        background-color: #ddd; }
+    border-right: 0px; } }
+@media all and (max-width: 730px) {
+  ul.top-nav {
+    margin: 4px 0px 0px 0px;
+    left: 0px;
+    position: absolute; }
 
   .splash {
-    padding-top: 180px; } }
-@media all and (max-width: 644px) {
-  .inquire, .reading {
-    float: left;
-    left: 0px;
-    top: 15px;
-    position: relative;
-    z-index: 3; }
-    .inquire a, .reading a {
-      font-size: 11pt;
-      width: 100%;
-      background-color: #274578;
-      color: #fff;
-      text-decoration: none;
-      padding: 40px 20px 40px 20px;
-      display: block; }
-
-  .header-link {
-    left: 0px;
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 3;
-    top: 94px; }
-    .header-link a {
-      font-size: 11pt;
-      width: 100%;
-      background-color: #80acf9;
-      color: #fff;
-      text-decoration: none;
-      padding: 40px 20px 40px 20px;
-      display: block; } }
-@media all and (max-width: 643px) {
-  .inquire a, .reading a {
-    width: 100%;
-    padding: 39px 20px 40px 20px; }
-
-  .header-link a {
-    width: 100%;
-    padding: 39px 20px 40px 20px; }
-
-  .reading {
-    top: 200px;
-    position: absolute;
-    left: 15px;
-    right: 15px; }
-    .reading a {
-      width: 100%;
-      background-color: #fff;
-      border: 2px solid #f26b5e;
-      color: #f26b5e; }
-      .reading a:hover {
-        background-color: #ddd; }
-
-  .splash {
-    padding-top: 180px; } }
-@media all and (max-width: 642px) {
-  .inquire a, .reading a {
-    width: 100%;
-    padding: 39px 20px 39px 20px; }
-
-  .header-link a {
-    width: 100%;
-    padding: 39px 20px 39px 20px; } }
-@media all and (max-width: 635px) {
-  .inquire a, .reading a {
-    width: 100%;
-    padding: 37px 20px 37px 20px; }
-
-  .header-link a {
-    width: 100%;
-    padding: 37px 20px 37px 20px; } }
+    padding: 100px 0px 100px 0px; } }
 @media all and (max-width: 629px) {
-  .inquire a, .reading a {
-    width: 99%;
-    padding: 20px 23px 20px 20px; }
-
-  .header-link {
-    left: 18px; }
-    .header-link a {
-      width: 95%;
-      padding: 20px 23px 20px 20px; }
-
-  .splash {
-    margin: 0px 0px 0px 0px;
-    padding: 60px 0px 100px 0px; } }
-@media all and (max-width: 627px) {
-  .inquire a, .reading a {
-    width: 100%;
-    padding: 15px 16px 15px 16px; }
-
-  .header-link {
-    left: 0px; }
-    .header-link a {
-      width: 100%;
-      padding: 15px 16px 15px 16px; }
-
   .splash {
     margin: 0px 0px 0px 0px;
     padding: 60px 0px 100px 0px; } }
 @media all and (max-width: 626px) {
-  .inquire, .reading {
-    left: 15px;
-    position: absolute;
-    top: 109px;
-    right: 15px; }
-    .inquire a, .reading a {
-      width: 100%;
-      padding: 15px 16px 15px 16px; }
-
-  .header-link {
-    left: 0px;
-    position: absolute;
-    top: 139px; }
-    .header-link a {
-      width: 100%;
-      padding: 15px 16px 15px 16px; }
-
   .splash {
     margin: 0px 0px 0px 0px;
-    padding: 80px 15px 100px 0px; }
+    padding: 80px 15px 100px 0px; } }
+@media all and (max-width: 492px) {
+  html {
+    margin: 0px !important;
+    padding: 0px !important; }
 
-  h1.splash-h1 {
-    font-size: 13pt; }
+  body {
+    margin: 0px !important;
+    padding: 0px !important; }
 
-  .reading {
-    top: 198px;
-    position: absolute;
-    left: 15px;
-    right: 15px; }
-    .reading a {
-      width: 100%;
-      background-color: #fff;
-      border-top: 2px solid #f26b5e;
-      border-bottom: 2px solid #f26b5e;
-      border-left: 0px;
-      border-right: 0px;
-      color: #f26b5e; }
-      .reading a:hover {
-        background-color: #f4f4f4; }
+  ul.top-nav {
+    margin: 4px 0px 0px 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute; }
+    ul.top-nav li:nth-child(1) {
+      width: 100%; }
+    ul.top-nav li:nth-child(2) {
+      width: 100%; }
+
+  .main-header {
+    width: 103%; }
 
   .splash {
-    padding-top: 150px; } }
-@media all and (max-width: 687px) {
-  .work-section-expo {
-    padding: 0px 30px 0px 30px; }
-
-  .work-section-title {
-    text-transform: uppercase;
-    color: #232932;
-    text-align: center;
-    font-size: 15pt;
-    border-bottom: 2px solid #232932;
-    font-weight: bold;
-    padding: 20px 30px 30px 30px; }
-
-  .rej-title {
-    padding: 20px 30px 30px 30px;
-    font-size: 15pt; } }
+    padding: 170px 0px 100px 0px; } }
