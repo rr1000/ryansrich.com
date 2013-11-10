@@ -14,17 +14,6 @@ $border-big: 15px solid #333;
 body{
 	font-family: "Futura", "Avenir", "Open Sans", sans-serif;
 	background-color: #fff;
-	// background: #2763cd;
-	// background: -moz-linear-gradient(-45deg,  #2763cd 0%, #477acc 100%);
-	// background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2763cd), color-stop(100%,#477acc));
-	// background: -webkit-linear-gradient(-45deg,  #2763cd 0%,#477acc 100%);
-	// background: -o-linear-gradient(-45deg,  #2763cd 0%,#477acc 100%);
-	// background: -ms-linear-gradient(-45deg,  #2763cd 0%,#477acc 100%);
-	// background: linear-gradient(135deg,  #2763cd 0%,#477acc 100%);
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2763cd', endColorstr='#477acc',GradientType=1 );
-	// border-left: $border-big;
-	// border-right: $border-big;
-	// border-bottom: $border-big;
 	top: 0px;
 }
 ::selection{
@@ -44,15 +33,6 @@ body{
 	-o-transition: all 600ms ease;
 	transition: all 600ms ease;
 }
-// .top-border{
-// 	position: fixed;
-// 	right: 0px;
-// 	top: 0px;
-// 	left: 0px;
-// 	background-color: #333;
-// 	height: 15px;
-// 	z-index: 5;
-// }
 .container{
 	width: 100%;
 	max-width: 1280px;
@@ -66,22 +46,17 @@ body{
 	right: 0px;
 	top: 0px;
 	background-color: #5693ff;
-	// border-right: $border-big;
-	// border-left: $border-big;
-	// -webkit-filter: blur(5px);
-	// -moz-filter: blur(5px);
-	// -o-filter: blur(5px);
-	// -ms-filter: blur(5px);
-	// filter: blur(5px);
 }
 ul.top-nav{
 	float: right;
 	padding: 0px;
 	margin: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 	li{
 		display: inline-block;
 		margin: 0px 0px 0px 0px;
-		// height: 98px;
 		background-color: #555;
 		&:last-child{
 			background-color: $site;
@@ -140,6 +115,9 @@ h1.splash-h1{
 		}
 	}
 }
+h1.splash-h1:nth-child(2){
+	margin-top: 30px;
+}
 .work{
 	background-color: #fff;
 	padding: 0px 0px 50px 0px;
@@ -195,6 +173,11 @@ h1.splash-h1{
 		font-size: 12pt;
 		border: 2px solid #232932;
 		padding: 10px 15px 10px 15px;
+		@extend .easing;
+		&:hover{
+			@extend .easing;
+			background-color: #ddd;
+		}
 	}
 }
 .alts{
@@ -307,6 +290,13 @@ hr.orange{
 	height: 3px;
 	border: 0px;
 }
+@media all and (max-width: 1000px){
+	body{
+		font-family: "Avenir", "Futura", "Open Sans", sans-serif;
+		background-color: #fff;
+		top: 0px;
+	}
+}
 @media all and (max-width: 853px){
 	.splash{
 		margin: 0px 0px 0px 0px;
@@ -317,10 +307,15 @@ hr.orange{
 		border-left: 0px;
 		border-right: 0px;
 	}
+	ul.top-nav{
+		margin: 0px 0px 0px 0px;
+		left: 0px;
+		position: relative;
+	}
 }
 @media all and (max-width: 730px){
 	ul.top-nav{
-		margin: 4px 0px 0px 0px;
+		margin: 98px 0px 0px 0px;
 		left: 0px;
 		position: absolute;
 	}
@@ -350,7 +345,7 @@ hr.orange{
 		padding: 0px !important;
 	}
 	ul.top-nav{
-		margin: 4px 0px 0px 0px;
+		margin: 98px 0px 0px 0px;
 		left: 0px;
 		right: 0px;
 		position: absolute;
