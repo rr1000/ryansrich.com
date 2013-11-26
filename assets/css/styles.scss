@@ -158,9 +158,13 @@ h1.splash-h1:nth-child(2){
 	max-width: 650px;
 }
 .work-section-img{
+	margin: 40px 0px 20px 0px;
+	border: 1px solid #ddd;
 	img{
 		width: 100%;
 		margin: auto;
+		padding: 0px;
+		margin: 0px;
 	}
 }
 .work-link{
@@ -251,18 +255,29 @@ hr.fatty{
 	li{
 		display: inline-block;
 		text-align: center;
-		margin: 0px 10px 0px 10px;
+		margin: 20px 10px 20px 10px;
 		@extend .easing;
 		&:hover{
 			@extend .easing;
 			opacity: 0.5;
+		}
+		a{
+			color: #fff;
+			text-decoration: none;
+			padding: 3px 6px 3px 6px;
+			border: 1px solid #fff;
+			@extend .easing;
+			&:hover{
+				@extend .easing;
+				background-color: #000;
+			}
 		}
 	}
 }
 .footer-p{
 	text-align: center;
 	color: #fff;
-	padding: 20px 0px 20px 0px;
+	padding: 20px 0px 40px 0px;
 }
 .services{
 	background-color: #f28b66;
