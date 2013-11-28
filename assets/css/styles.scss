@@ -103,15 +103,59 @@ h1.splash-h1{
 	line-height: 2;
 	color: #274578;
 	margin: 50px 0px 0px 0px;
-	max-width: 650px;
+	max-width: 810px;
 	padding: 0px 0px 0px 15px;
-	a{
+	a.orange{
 		text-decoration: none;
 		color: $pinkish;
+		border: 2px solid $pinkish;
+		padding: 10px 15px 10px 15px;
+		margin: 0px 20px 0px 0px;
 		@extend .easing;
 		&:hover{
 			color: $dark;
 			background-color: #f4f4f4;
+		}
+	}
+	a.blue{
+		text-decoration: none;
+		color: #b03b33;
+		padding: 10px 15px 10px 15px;
+		margin: 0px 10px 0px 0px;
+		border: 2px solid #b03b33;
+		@extend .easing;
+		&:hover{
+			color: $dark;
+			background-color: #f4f4f4;
+		}
+	}
+	a.dark{
+		text-decoration: none;
+		color: #777;
+		padding: 10px 15px 10px 15px;
+		margin: 0px 0px 0px 0px;
+		@extend .easing;
+		&:hover{
+			color: $dark;
+			background-color: #f4f4f4;
+		}
+	}
+}
+.bitcoin-expo{
+	display: none;
+	font-size: 11pt;
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+	padding: 10px;
+	width: 400px;
+	position: absolute;
+	margin: -55px 0px 0px 770px;
+	a{
+		text-decoration: none;
+		@extend .easing;
+		&:hover{
+			color: #000;
+			@extend .easing;
 		}
 	}
 }
@@ -311,6 +355,16 @@ hr.orange{
 		background-color: #fff;
 		top: 0px;
 	}
+	h1.splash-h1{
+		font-size: 18pt;
+		a{
+			display: block;
+			margin-top: 35px !important;
+		}
+		.dark{
+			display: none;
+		}
+	}
 }
 @media all and (max-width: 853px){
 	.splash{
@@ -337,6 +391,14 @@ hr.orange{
 	.splash{
 		padding: 100px 0px 100px 0px;
 	}
+	h1.splash-h1{
+		font-size: 18pt;
+		a{
+			margin-top: 35px;
+			display: block;
+			width: 100%;
+		}
+	}
 }
 @media all and (max-width: 629px){
 	.splash{
@@ -348,6 +410,9 @@ hr.orange{
 	.splash{
 		margin: 0px 0px 0px 0px;
 		padding: 80px 15px 100px 0px;
+	}
+	.work-section{
+		padding: 0px 20px 0px 20px;
 	}
 }
 @media all and (max-width: 492px){
@@ -376,5 +441,17 @@ hr.orange{
 	}
 	.splash{
 		padding: 170px 0px 100px 0px;
+	}
+	h1.splash-h1{
+		font-size: 18pt;
+		a{
+			text-align: center;
+			margin-top: 35px;
+			display: block;
+			width: 96%;
+		}
+		.dark{
+			display: none;
+		}
 	}
 }

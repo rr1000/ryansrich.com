@@ -21,4 +21,17 @@ $(document).ready(function(){
 		}
 	});
 
+	//Bitcoin expo
+	$(".dark").click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		console.log("Bitcoin pay has been clicked");
+		$(".bitcoin-expo").fadeToggle(250);
+	});
+
+	//Hide Bitcoin expo when clicking anywhere
+	$(document).click(function(){
+		$(".bitcoin-expo").fadeOut(250);
+	});
+
 });
