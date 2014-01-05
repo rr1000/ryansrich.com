@@ -4,8 +4,8 @@ body{
 	font-family: Avenir, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .shout-out{
-	background-color: #f18564;
-	color: #963f24;
+	background-color: #e8dccf;
+	color: #555;
 	text-align: center;
 	font-size: 11pt;
 	padding: 5px 0px 5px 0px;
@@ -14,7 +14,7 @@ body{
 	top: 0px;
 }
 .shout-out a{
-	color: #963f24;
+	color: #005b7f;
 	-moz-transition: all 350ms ease;
 	-webkit-transition: all 350ms ease;
 	-o-transition: all 350ms ease;
