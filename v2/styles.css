@@ -35,8 +35,16 @@ body{
 }
 header.splash{
 	background-color: #333;
-	padding: 50px;
+	padding: 50px 50px 100px 50px;
 	background: url(img/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+header.photos-splash{
+	padding: 50px 50px 100px 50px;
+	background: #292e3f;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -134,10 +142,27 @@ ul.social li a:hover{
 	content: url(img/link-icon.png);
 	padding: 0px 5px 0px 0px;
 }
+
+.photos:before{
+	content: url(img/photo-icon.png);
+	padding: 0px 5px 0px 0px;
+}
 /* .linkedin:hover:before{
 	content: url(img/link-icon-b.png);
 	padding: 0px 5px 0px 0px;
 } */
+.photos{
+	max-width: 760px;
+	margin: auto;
+	width: 100%;
+}
+.photos img{
+	width: 100%;
+	height: auto;
+}
+.image{
+	margin: 20px 0px 20px 0px;
+}
 .work p{
 	color: #666;
 	font-size: 20pt;
