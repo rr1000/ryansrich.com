@@ -4,6 +4,9 @@ body{
 	margin: 0px;
 	font-family: Futura, Avenir, "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+body.photo-bg{
+	background-color: #111;
+}
 .shout-out{
 	background-color: #e8dccf;
 	color: #555;
@@ -154,17 +157,32 @@ ul.social li a:hover{
 	content: url(img/link-icon-b.png);
 	padding: 0px 5px 0px 0px;
 } */
-.photos{
-	max-width: 760px;
+.photos-wrapper{
+	max-width: 800px;
 	margin: auto;
 	width: 100%;
 }
-.photos img{
+.photos-wrapper a{
+	color: #999;
+	text-decoration: none;
+	margin: 20px 0px 0px 0px;
+	display: block;
+}
+.photos-wrapper a:hover{
+	color: #fff;
+}
+.photos-wrapper img{
 	width: 100%;
 	height: auto;
+	border: 2px solid #999;
+}
+.photos-wrapper h1{
+	padding: 30px;
+	border: 2px solid #999;
+	color: #999;
 }
 .image{
-	margin: 20px 0px 20px 0px;
+	margin: 40px 0px 40px 0px;
 }
 .work p{
 	color: #666;
@@ -265,6 +283,9 @@ footer ul li{
 	transition: all 350ms ease;
 }
 @media all and (max-width:820px){
+	.photos-wrapper{
+		padding: 0px 30px 0px 30px;
+	}
 	.grid-pad {
 		padding: 10px 0px 0px 20px;
 	}
