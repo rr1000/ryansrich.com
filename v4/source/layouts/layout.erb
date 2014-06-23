@@ -1,0 +1,17 @@
+<%= partial "partials/header" %>
+<div class="cf">
+	<div class="col-4-12">
+		<%= partial "partials/nav" %>
+	</div>
+	<div class="col-6-12">
+		<section class="main_section">
+			<%= yield %>
+		</section>
+	</div>
+	<div class="col-2-12">
+		<aside class="main_section_aside">
+			<%= partial "partials/sidebar" %>
+		</aside>
+	</div>
+</div>
+<%= partial "partials/footer" %>
