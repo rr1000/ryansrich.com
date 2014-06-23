@@ -1,0 +1,15 @@
+<%= partial "partials/header" %>
+<div class="cf">
+	<div class="col-4-12">
+		<%= partial "partials/nav" %>
+	</div>
+	<div class="col-8-12">
+		<section class="main_section">
+			<article class="blog_article">
+				<%= yield %>
+				<%= disqus %>
+			</article>
+		</section>
+	</div>
+</div>
+<%= partial "partials/footer" %>

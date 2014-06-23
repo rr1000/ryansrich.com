@@ -1,0 +1,12 @@
+---
+title: Product Designer and Digital Entrepreneur
+---
+<% blog.articles[0...5].each do |article| %>
+	<article class="blog_article">
+		<div class="blog_article_title">
+			<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+			<h2><%= article.date.strftime('%b %e %Y') %></h2>
+		</div>
+		<%= article.summary %>
+	</article>
+<% end %>
