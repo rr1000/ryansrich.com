@@ -1,0 +1,8 @@
+---
+title: A New Blog Design
+tags: Blog, Meta, Redesign
+layout: layout_blog
+---
+![Cover Image](/assets/img/blog_imgs/new_blog_cover_img.png)
+
+I'm excited to finally publish my new blog. For the past year I've been blogging on the [svbtle](http://svbtle.com) network. A few weeks ago I felt it was a good time to move back to something I have full control over. After running through a couple of designs and going back and forth on whether or not to include a portfolio I've decided to release something and iterate as needed. In the end I decided to go with a basic [Middleman](http://middlemanapp.com) setup. Right now this site has a basic blog and a few links to contact me. In the future I plan on adding a current and past projects section as well as a small bio. I hope I can provide some interesting incites about design and business. As always if there's something you'd like to hear about please [send me an email](mailto:rrichrs+contact@gmail.com). Cheers!

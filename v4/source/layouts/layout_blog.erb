@@ -1,15 +1,18 @@
 <%= partial "partials/header" %>
-<div class="cf">
-	<div class="col-4-12">
-		<%= partial "partials/nav" %>
-	</div>
-	<div class="col-8-12">
-		<section class="main_section">
-			<article class="blog_article">
-				<%= yield %>
-				<%= disqus %>
-			</article>
-		</section>
+<div class="grid">
+	<div class="cf">
+		<div class="col-4-12">
+			<%= partial "partials/nav" %>
+		</div>
+		<div class="col-8-12">
+			<section class="main_section">
+				<article class="blog_article">
+					<h1 class="page_title"><%= current_page.data.title %></h1>
+					<%= yield %>
+					<%= disqus %>
+				</article>
+			</section>
+		</div>
 	</div>
 </div>
 <%= partial "partials/footer" %>

@@ -1,7 +1,7 @@
 ---
-title: A Web Generatlist
+title: A Web Generalist
 ---
-![Cover Image](http://i.imgur.com/azHY8Nz.png)
+![Cover Image](/assets/img/blog_imgs/generalist_cover_img.png)
 
 The term 'generalist' is often associated with negativity. Some might consider a generalist to be someone that dabbles here and there, but never really understands one domain completely. I tend to disagree with that opinion. I believe a generalist is someone that has many passions. A generalist wants to code the website, deploy and manage it, as well as have a hand in the design process and perhaps even some marketing.
 
