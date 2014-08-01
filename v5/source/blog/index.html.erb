@@ -1,0 +1,16 @@
+---
+title: Resulting From | Business, Technology, and Design
+layout: layout_blog_index
+---
+<% blog.articles.each do |article| %>
+	<article class="home-post-article">
+		<header>
+			<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+			<div class="home-main-tags">
+				<p><span>In this post:</span> <%= article.data.tags %></p>
+				<p><span>Posted on:</span> <%= article.date.strftime('%b %e %Y') %></p>
+			</div>
+		</header>
+		<%= article.summary %>
+	</article>
+<% end %>

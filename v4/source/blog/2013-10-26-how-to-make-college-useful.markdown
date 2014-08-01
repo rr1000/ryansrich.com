@@ -1,7 +1,7 @@
 ---
 title: How To Make College Useful
 ---
-![Cover Image](http://i.imgur.com/K4rZWaL.png)
+![Cover Image](/assets/img/blog_imgs/college_cover_img.png)
 
 > “If you want to get laid, go to college. If you want an education, go to the library.” ~ Frank Zappa
 

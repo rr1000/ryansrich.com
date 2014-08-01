@@ -1,5 +1,7 @@
 ---
 title: Redesigning The Catalyze Dashboard
+tags: Redesign, Catalyze, Product
+layout: layout_blog
 ---
 ![Cover Image](/assets/img/blog_imgs/catalyze_cover_img.png)
 
