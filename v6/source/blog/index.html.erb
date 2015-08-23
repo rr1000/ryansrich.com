@@ -1,0 +1,15 @@
+---
+title: Blog
+layout: layout_blog
+---
+<%= partial "sections/header_blog" %>
+<section class="work-intro_body">
+	<div class="grid">
+		<% blog.articles[0...10].each do |article| %>
+			<div class="main-blog_post">
+				<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+				<%= article.summary(150) %>
+			</div>
+		<% end %>
+	</div>
+</section>

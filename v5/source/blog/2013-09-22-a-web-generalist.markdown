@@ -2,6 +2,7 @@
 title: A Web Generalist
 tags: Web, Generalism, Career, Advice
 layout: layout_blog
+sum: Here I talk about the skills required to be a generalist.
 ---
 ![Cover Image](/assets/img/blog_imgs/generalist_cover_img.png)
 

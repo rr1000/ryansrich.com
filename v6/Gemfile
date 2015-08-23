@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+
+gem "middleman"
+
+gem "middleman-blog"
+
+gem "nokogiri"
+
+gem "middleman-disqus"
+
+gem "middleman-deploy"
+
+gem "middleman-minify-html"

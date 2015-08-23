@@ -16,16 +16,14 @@
 		<%= stylesheet_link_tag  "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" %>
 		<%= stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css" %>
 		<%= javascript_include_tag  "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" %>
-		<%= javascript_include_tag  "main" %>
+		<%= javascript_include_tag  "wp", "main" %>
 		<link rel="icon" type="image/png" href="http://photos-c.ak.instagram.com/hphotos-ak-xap1/10520373_1435620416712026_285384687_a.jpg">
 		<link rel="author" href="https://twitter.com/ryanSrich">
 		<!--[if IE]>
 			<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<script type="text/javascript">
-			window.heap=window.heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
-			heap.load("1038845093");
-		</script>
+		<%= partial "partials/heap" %>
+		<%= partial "partials/ga" %>
+		<%= partial "partials/font" %>
 	</head>
 	<body class="<%= page_classes %>">
-		<div class="grid">
