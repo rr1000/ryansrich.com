@@ -2,6 +2,7 @@
 title: Defining a Designer
 tags: Design, Occupation, Titles
 layout: layout_blog
+sum: This article discusses how the tech industry is redefining what it means to be a designer.
 ---
 
 ![Cover Image](/assets/img/blog_imgs/designer_cover_img.png)

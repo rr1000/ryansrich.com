@@ -1,0 +1,17 @@
+<section class="main-blog-feature_body">
+	<div class="grid">
+		<h1 class="main-blog-h1_body">Recent Writings</h1>
+		<p class="main-blog-p_body">I write about software, product design, and entrepreneurship. My writings are mostly short-form and easy-to-digest.</p>
+		<% blog.articles[0...2].each do |article| %>
+		<div class="col-6-12">
+			<div class="main-post_feature">
+				<h1><a href="<%= article.url %>"><%= article.title %></a></h1>
+				<%= article.summary(150) %>
+			</div>
+		</div>
+		<% end %>
+	</div>
+	<div class="grid">
+		<div class="col-1-1"><a href="/blog" class="main-blog-btn_feature">Read more posts »</a></div>
+	</div>
+</section>

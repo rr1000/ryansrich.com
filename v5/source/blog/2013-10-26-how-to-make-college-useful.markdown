@@ -2,6 +2,7 @@
 title: How To Make College Useful
 tags: College, Advice, Education
 layout: layout_blog
+sum: This article talks about a few hacks/tips I used to make college worth the large price tag.
 ---
 ![Cover Image](/assets/img/blog_imgs/college_cover_img.png)
 

@@ -2,6 +2,7 @@
 title: Redesigning The Catalyze Dashboard
 tags: Redesign, Catalyze, Product
 layout: layout_blog
+sum: Here I discuss the process of redesigning the Catalyze Backend as a Service dashboard.
 ---
 ![Cover Image](/assets/img/blog_imgs/catalyze_cover_img.png)
 

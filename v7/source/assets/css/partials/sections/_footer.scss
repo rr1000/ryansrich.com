@@ -1,0 +1,50 @@
+.rsr_main-footer{
+	@extend .cf;
+	padding: 30px 20px 30px 20px;
+	background-color: $c_footer-bg;
+	.rsr_footer-logo{
+		float: left;
+		img{
+			display: block;
+			max-width: 40px;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.rsr_right-section{
+		p{
+			color: $c_text;
+			font-size: 12px;
+			text-align: right;
+			padding: 0px 0px 10px 0px;
+		}
+		float: right;
+		nav{
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color: $c_text;
+				margin: 0px 0px 0px 10px;
+				font-size: 12px;
+				@include easing(350ms);
+				&:hover{
+					@include easing(350ms);
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+}
+.rsr_bigass-footer{
+	padding: 50px 20px 50px 20px;
+	background-color: #111;
+	h1{
+		text-align: center;
+		color: #fff;
+		font-size: 16px;
+		font-family: $f_sans-reg;
+		span{
+			font-family: $f_sans-ital;
+		}
+	}
+}

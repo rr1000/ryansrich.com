@@ -2,6 +2,7 @@
 title: Working Remotely as a Designer
 tags: Design, Remote, Advice
 layout: layout_blog
+sum: This article discusses the tools and processes we use to work remotely.
 ---
 ![Cover Image](/assets/img/blog_imgs/remote_cover_img.png)
 

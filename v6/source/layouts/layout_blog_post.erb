@@ -1,0 +1,40 @@
+<!doctype html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name=description content="Ryan Rich | Product Designer">
+		<meta property=og:description content="I am a Product Designer, Digital Entrepreneur, and Developer with a passion for simplicity in Human Computer Interaction.">
+		<meta property=og:title content="Ryan Rich">
+		<meta property=og:type content="website">
+		<meta property=og:locale content=en_US>
+		<title><%= current_page.data.title || "Resulting From, The portfolio and blog of Ryan Rich" %></title>
+		<link rel="icon" type="image/png" href="http://photos-c.ak.instagram.com/hphotos-ak-xap1/10520373_1435620416712026_285384687_a.jpg">
+		<%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", "styles" %>
+		<script type="text/javascript" src="http://fast.fonts.net/jsapi/1d852d38-11df-412c-acaf-e93c61fcfe2a.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-53577231-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body class="<%= page_classes %>">
+		<%= partial "sections/header_blog" %>
+		<section class="work-intro_body">
+			<div class="grid">
+				<div class="single-post_body">
+					<div class="main-blog_post">
+						<h1><%= current_article.title %></h1>
+						<%= yield %>
+					</div>
+				</div>
+			</div>
+		</section>
+		<%= partial "sections/footer" %>
+		<%= javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "app" %>
+	</body>
+</html>

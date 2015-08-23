@@ -2,6 +2,7 @@
 title: Notes - Wilson Miner's 'When We Build'
 tags: Notes, Design, Future, Advice
 layout: layout_blog
+sum: Here are a few notes I took while watching Wilson Miner's keynote at the 2011 Build Conf.
 ---
 ![Cover Image](/assets/img/blog_imgs/miner_cover_img.png)
 
