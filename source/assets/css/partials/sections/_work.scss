@@ -1,0 +1,241 @@
+.home-work{
+    padding: 60px 20px;
+    .work-block{
+        @extend .cf;
+        @include easing(350ms);
+        margin: 0px 0px 120px 0px;
+        &:last-of-type{margin: 0px;}
+        &:hover{
+            @include easing(350ms);
+            .hr{@include easing(350ms);margin-left: -10px;}
+            h1{.vr{left: -80px;}margin-left: 70px;@include easing(350ms);color: $c_blue}
+            p{@include easing(350ms);color: $c_blue}
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        p{
+            @include easing(350ms);
+            line-height: 1.5;
+            color: $c_gray-3;
+            max-width: 500px;
+            line-height: 1.5;
+            margin: 0px 0px 30px 0px;
+            float: left;
+        }
+        a.view{
+            display: block;
+            color: $c_blue;
+            font-weight: 900;
+            text-decoration: none;
+            border-bottom: 2px solid $c_gray-2;
+            float: right;
+            font-family: $f_serif;
+            font-size: 20px;
+            padding: 0px 0px 10px 0px;
+            @include easing(350ms);
+            &:hover{
+                @include easing(350ms);
+                border-bottom: 2px solid transparent;
+            }
+        }
+        h1{
+            @include easing(350ms);
+            font-size: 60px;
+            font-weight: 600;
+            color: $c_gray-4;
+            font-family: $f_serif;
+            position: relative;
+            margin: 0px 0px 30px 60px;
+            .vr{
+                @include easing(350ms);
+                width: 50px;
+                top: 30px;
+                left: -60px;
+                position: absolute;
+                @include border-radius(5px);
+                background-color: $c_gray-4;
+                height: 2px;
+            }
+        }
+        header{max-width: 750px;}
+        .hr{
+            @include easing(350ms);
+            width: 50px;
+            margin: 0px 0px 30px 0px;
+            @include border-radius(5px);
+            background-color: $c_gray-2;
+            height: 2px;
+        }
+        .meta{
+            @extend .cf;
+            p{
+                color: $c_gray-3;
+                strong{font-weight: 700;}
+                float: left;
+                &:last-of-type{margin-left: 20px;}
+            }
+        }
+    }
+}
+.hr-alt{
+    margin: 60px 0px 0px 0px;
+    background: url('../img/hr-alt.png');
+    width: 103px;
+    height: 18px;
+    background-size: 103px 18px;
+}
+.fin{
+    background-color: $c_gray-5;
+    border-top: 5px solid $c_gray-2;
+    border-bottom: 5px solid $c_gray-2;
+    padding: 80px 20px;
+    position: relative;
+    a{
+        text-decoration: none;
+        color: $c_gray-4;
+        @include easing(350ms);
+        &:hover{
+            @include easing(350ms);
+            background-color: $c_highlight;
+        }
+    }
+    h2{
+        font-family: $f_serif;
+        color: $c_blue;
+        font-size: 40px;
+        line-height: 1.2;
+        margin: 0px 0px 30px 0px;
+    }
+    p{
+        color: $c_gray-3;
+        max-width: 500px;
+        line-height: 1.5;
+        margin: 0px 0px 30px 0px;
+        &:last-of-type{margin: 0px;}
+    }
+    img{
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    .hr-vert{
+        background: url('../img/hr-vert.png');
+        height: 104px;
+        width: 17px;
+        background-size: 17px 104px;
+        position: absolute;
+        top: 80px;
+        left: -80px;
+    }
+}
+// Work page styles
+body.work{
+    .main-header{
+        background-color: $c_gray-0;
+        @include box-shadow(0px 2px 20px 0px rgba(0,0,0,0.2));
+        a.logo{
+            color: $c_blue;
+            &:hover{color: $c_gray-4;}
+            span.block{background-color: $c_gray-3;}
+        }
+        nav{
+            a{
+                color: $c_blue;
+                &:hover{color: $c_gray-4;}
+            }
+        }
+        .icon-nav{
+            background: url('../img/icon-nav-blue.png');
+            width: 30px;
+            height: 22px;
+            background-size: 30px 22px;
+        }
+    }
+    .main-footer{border-top: 5px solid $c_gray-2;}
+}
+.work-masthead{
+    @extend .about-masthead;
+    border-bottom: 5px solid $c_gray-2;
+    background-color: $c_gray-0;
+    .square{border: 1px solid $c_blue;}
+    .hr{background-color: $c_gray-2;}
+    h1{color: $c_gray-4;}
+    a.pointer{color: $c_blue;&:hover{color: $c_gray-4;}}
+    .elv{color: $c_gray-1;}
+    .amp{color: $c_gray-5;}
+}
+// Single case study
+.work-single-masthead{
+    @extend .work-masthead;
+    .amp{
+        top: -120px;
+        right: 50px;
+        font-size: 500px;
+    }
+}
+.case-study{
+    @extend .home-work;
+    h1{
+        font-size: 30px;
+        font-family: $f_serif;
+        color: $c_gray-4;
+        padding: 0px 0px 0px 30px;
+        border-left: 5px solid $c_blue;
+        line-height: 1.2;
+        margin: 0px 0px 30px 0px;
+        font-weight: 500;
+        max-width: 750px;
+    }
+    .block{
+        p{
+            color: $c_gray-3;
+            line-height: 1.5;
+            strong{background-color: lighten($c_highlight, 15%);}
+        }
+    }
+}
+.img-big{
+    max-width: 1260px;
+    width: 100%;
+    margin: 30px auto 0px auto;
+    padding: 30px;
+    background-color: $c_gray-5;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+.img-2-up{
+    @extend .cf;
+    max-width: 1260px;
+    width: 100%;
+    margin: 30px auto 0px auto;
+    padding: 30px;
+    background-color: $c_gray-5;
+    [class*='col-']{padding: 0px;margin: 0px;}
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+.inline-content{
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    border-left: 5px solid $c_gray-3;
+    max-width: 550px;
+    h3{
+        font-size: 60px;
+        font-weight: 600;
+        color: $c_gray-4;
+        font-family: $f_serif;
+        padding: 0px 0px 20px 0px;
+    }
+    p{
+        line-height: 1.5;
+        color: $c_gray-3;
+    }
+}

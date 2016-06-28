@@ -1,0 +1,39 @@
+.main-footer{
+    padding: 50px 20px;
+    p{
+        color: $c_gray-3;
+        font-size: 12px;
+        line-height: 2;
+        strong{font-weight: 900;}
+        max-width: 250px;
+    }
+    ul{
+        margin: 30px 0px 0px 0px;
+        li{
+            display: inline-block;
+            a{
+                color: $c_blue;
+                font-family: $f_serif;
+                display: inline-block;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 900;
+                margin: 0px 10px 0px 0px;
+                @include easing(350ms);
+                &:hover{
+                    @include easing(350ms);
+                    background-color: $c_highlight;
+                }
+            }
+        }
+    }
+    .badge{
+        position: absolute;
+        right: 0px;
+        top: -5px;
+        background: url('../img/badge.png');
+        height: 135px;
+        width: 135px;
+        background-size: 135px 135px;
+    }
+}

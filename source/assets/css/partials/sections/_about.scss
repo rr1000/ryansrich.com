@@ -1,0 +1,66 @@
+.about-masthead{@extend .home-masthead;}
+.about-experience{
+    @extend .home-work;
+    .experience-block{
+        @include easing(350ms);
+        &:hover{
+            @include easing(350ms);
+            background-color: $c_gray-5;
+            padding: 0px 20px;
+            h1{
+                @include easing(350ms);
+                color: $c_blue;
+            }
+        }
+        max-width: 650px;
+        margin: 0px 0px 80px 0px;
+        color: $c_gray-4;
+        position: relative;
+        padding: 0px 0px 0px 30px;
+        border-left: 2px solid $c_gray-2;
+        h1{
+            @include easing(350ms);
+            font-size: 50px;
+            font-family: $f_serif;
+        }
+        h2{
+            position: absolute;
+            @include rotate(-90deg);
+            left: -50px;
+        }
+        h2#a{
+            left: -47px;
+            top: 54px;
+        }
+        h2#b{
+            left: -69px;
+            top: 61px;
+        }
+        h2#c{
+            left: -54px;
+            top: 58px;
+        }
+        h2#d{
+            left: -37px;
+            top: 56px;
+        }
+        h3{
+            font-size: 12px;
+            padding: 5px;
+            margin: 20px 0px;
+            font-weight: 700;
+            font-style: italic;
+            background-color: lighten($c_highlight, 15%);
+            display: inline-block;
+            color: $c_blue;
+        }
+        p{
+            color: $c_gray-3;
+        }
+        .hr-alt{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+}
