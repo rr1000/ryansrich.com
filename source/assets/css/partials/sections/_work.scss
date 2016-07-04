@@ -174,6 +174,28 @@ body.work{
         right: 50px;
         font-size: 500px;
     }
+    .external-cta{
+        position: relative;
+        z-index: 99;
+        display: inline-block;
+        margin: 0px 0px 30px 0px;
+        background-image: -webkit-linear-gradient(#88F3CC 0%, #48D687 100%);
+        background-image: -o-linear-gradient(#88F3CC 0%, #48D687 100%);
+        background-image: linear-gradient(#88F3CC 0%, #48D687 100%);
+        box-shadow: inset 0px -1px 1px 0px rgba(60,145,107,0.5);
+        color: darken(#48D687, 25%);
+        padding: 10px 20px;
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        @include border-radius(5px);
+        text-decoration: none;
+        &:hover{
+            background-image: -webkit-linear-gradient(darken(#88F3CC, 10%) 0%, #48D687 100%);
+            background-image: -o-linear-gradient(darken(#88F3CC, 10%) 0%, #48D687 100%);
+            background-image: linear-gradient(darken(#88F3CC, 10%) 0%, #48D687 100%);
+        }
+    }
 }
 .case-study{
     @extend .home-work;
@@ -202,11 +224,13 @@ body.work{
     margin: 30px auto 0px auto;
     padding: 30px;
     background-color: $c_gray-5;
+    iframe,
     img{
         max-width: 100%;
         width: 100%;
         height: auto;
     }
+    iframe{min-height: 750px;}
 }
 .img-2-up{
     @extend .cf;
@@ -237,5 +261,11 @@ body.work{
     p{
         line-height: 1.5;
         color: $c_gray-3;
+        padding: 0px 0px 20px 0px;
+        &:last-of-type{padding: 0px;}
+        a{
+            color: $c_blue;
+            text-decoration: none;
+        }
     }
 }
