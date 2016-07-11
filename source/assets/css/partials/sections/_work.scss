@@ -162,6 +162,15 @@ body.work{
     .square{border: 1px solid $c_blue;}
     .hr{background-color: $c_gray-2;}
     h1{color: $c_gray-4;}
+    h4{
+        position: relative;
+        z-index: 99;
+        line-height: 2;
+        font-size: 28px;
+        font-weight: 300;
+        color: $c_blue;
+        max-width: 100%;
+    }
     a.pointer{color: $c_blue;&:hover{color: $c_gray-4;}}
     .elv{color: $c_gray-1;}
     .amp{color: $c_gray-5;}
@@ -196,6 +205,9 @@ body.work{
             background-image: linear-gradient(darken(#88F3CC, 10%) 0%, #48D687 100%);
         }
     }
+    h4{
+        em{font-style: italic;}
+    }
 }
 .case-study{
     @extend .home-work;
@@ -215,6 +227,12 @@ body.work{
             color: $c_gray-3;
             line-height: 1.5;
             strong{background-color: lighten($c_highlight, 15%);}
+        }
+        .col-8-12{
+            p{
+                padding: 0px 0px 20px 0px;
+                &:last-of-type{padding: 0px;}
+            }
         }
     }
 }
@@ -267,5 +285,27 @@ body.work{
             color: $c_blue;
             text-decoration: none;
         }
+    }
+}
+a.more-work-cta{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: $c_gray-0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 650px;
+    margin: 30px auto 0px auto;
+    padding: 30px;
+    line-height: 1;
+    @include border-radius(40px);
+    background-color: $c_blue;
+    @include easing(350ms);
+    &:hover{
+        @include easing(350ms);
+        background-color: $c_gray-0;
+        color: $c_blue;
     }
 }
