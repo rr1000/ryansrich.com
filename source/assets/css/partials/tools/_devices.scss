@@ -87,7 +87,6 @@
     .inline-content{
         h3{font-size: 30px;}
     }
-
     .fin{
         padding: 60px 20px;
         h2{font-size: 40px;}
@@ -125,6 +124,7 @@
                 &:before{}
                 &:last-of-type{margin: 0px;}
             }
+            .hr-header{display: none;}
         }
         .icon-nav{
             display: block;

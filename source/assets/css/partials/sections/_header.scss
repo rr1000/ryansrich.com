@@ -55,6 +55,14 @@
                 color: $c_highlight;
             }
         }
+        .hr-header{
+            display: inline-block;
+            background: url('../img/hr-header.png');
+            width: 60px;
+            height: 12px;
+            background-size: 60px 12px;
+            margin: 0px 0px 0px 20px;
+        }
     }
     .icon-nav{
         display: none;
