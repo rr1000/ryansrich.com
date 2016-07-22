@@ -131,6 +131,11 @@
             z-index: 100;
         }
     }
+    body.work{
+        .main-header{
+            nav{.hr-header{display: none;}}
+        }
+    }
     .grid{
         width: 100%;
         min-width: 0;
