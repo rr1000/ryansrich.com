@@ -4,6 +4,7 @@
     background-color: $c_gray-4;
     position: relative;
     z-index: 98;
+    overflow-x: hidden;
     .square{
         height: 100px;
         width: 100px;
