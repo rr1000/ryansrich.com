@@ -1,6 +1,7 @@
 .main-header{
     background-color: $c_gray-4;
-    padding: 30px 20px;
+    border-bottom: 1px solid $c_dark-fire;
+    padding: 40px 20px;
     position: fixed;
     width: 100%;
     left: 0px;
@@ -8,21 +9,6 @@
     top: 0px;
     z-index: 99;
     @extend .cf;
-    @include box-shadow(0px 2px 20px 0px rgba(0,0,0,0.56));
-    .c-logo{
-        position: absolute;
-        background: url('../img/logo-w.png');
-        height: 30px;
-        width: 30px;
-        background-size: 30px 30px;
-        left: 20px;
-        top: 20px;
-        -webkit-animation: rotating 5s linear infinite;
-        -moz-animation: rotating 5s linear infinite;
-        -ms-animation: rotating 5s linear infinite;
-        -o-animation: rotating 5s linear infinite;
-        animation: rotating 5s linear infinite;
-    }
     a.logo{
         color: $c_gray-0;
         display: block;
@@ -76,15 +62,10 @@
     }
 }
 body.work{
+    .lhr{background-color: $c_gray-2;}
+    .n2,
+    .n1{color: $c_fire;@include opacity(0.5);}
     .main-header{
-        .c-logo{
-            position: absolute;
-            background: url('../img/logo.png');
-            height: 30px;
-            width: 30px;
-            background-size: 30px 30px;
-            left: 20px;
-            top: 20px;
-        }
+        border-bottom: 1px solid $c_gray-2;
     }
 }
