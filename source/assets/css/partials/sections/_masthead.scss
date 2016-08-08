@@ -1,32 +1,6 @@
-.lhr{
-    height: 100%;
-    top: 0px;
-    bottom: 0px;
-    left: 96px;
-    position: fixed;
-    width: 1px;
-    background-color: $c_dark-fire;
-    z-index: 1001;
-}
-.n2,
-.n1{
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: $c_fire;
-    position: fixed;
-    top: 79px;
-    left: 102px;
-    z-index: 1001;
-}
-.n2{
-    @include rotate(-90deg);
-    top: 129px;
-    left: 49px;
-}
 .home-masthead{
     margin: 74px 0px 0px 0px;
-    padding: 180px 20px;
+    padding: 150px 20px;
     background-color: $c_gray-4;
     position: relative;
     z-index: 98;
@@ -52,7 +26,7 @@
         width: 50px;
         margin: 0px 0px 30px 0px;
         @include border-radius(5px);
-        background-color: $c_gray-0;
+        background-color: rgba(255,255,255,0.2);
         height: 2px;
     }
     h4{

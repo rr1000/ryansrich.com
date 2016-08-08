@@ -172,15 +172,14 @@ body.work{
     h4{
         position: relative;
         z-index: 99;
-        line-height: 2;
-        font-size: 28px;
-        font-weight: 300;
-        color: $c_blue;
+        line-height: 1.8;
+        font-size: 22px;
+        color: lighten($c_gray-6, 50%);
         max-width: 100%;
     }
     a.pointer{color: $c_blue;&:hover{color: $c_gray-4;}}
     .elv{color: $c_gray-1;}
-    .amp{color: $c_gray-5;}
+    .amp{color: lighten($c_gray-6, 83%);@include opacity(1.0);}
 }
 // Single case study
 .work-single-masthead{
