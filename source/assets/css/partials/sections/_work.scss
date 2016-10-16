@@ -93,3 +93,43 @@
         }
     }
 }
+.other-work{
+    padding: 20px;
+    background-color: $c_black;
+    @include border-radius(5px);
+    .row{
+        font-size: 18px;
+        font-family: $f_light;
+        padding: 0px 0px 20px 0px;
+        border-bottom: 1px solid $c_text;
+        margin: 0px 0px 20px 0px;
+        &:last-of-type{
+            margin: 0px; padding: 0px; border: 0px;
+            &:hover{padding: 0px 0px 0px 10px;}
+        }
+        @include easing(350ms);
+        &:hover{
+            @include easing(350ms);
+            padding: 0px 0px 20px 10px;
+            a{
+                @include easing(350ms);
+                padding: 0px 10px 0px 0px;
+                color: #65E9FF;
+            }
+        }
+        @extend .cf;
+        span{
+            display: block;
+            float: left;
+            margin: 0px 0px 0px 10px;
+        }
+        .name,
+        .year{color: $c_white;}
+        a{
+            @include easing(350ms);
+            display: block;
+            float: right;
+            color: $c_text-light;
+        }
+    }
+}

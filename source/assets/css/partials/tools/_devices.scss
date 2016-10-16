@@ -1,3 +1,14 @@
+@media all and (max-width: 990px){
+    .main-header{padding: 40px 30px 40px 30px;}
+    .masthead{padding: 0px 30px 40px 30px}
+    .hero{padding: 40px 30px;}
+    .work{padding: 40px 30px;margin: 0px 0px 40px 0px;}
+    .main-footer{
+        margin: 0px 0px 40px 0px;
+        padding: 0px 30px;
+    }
+    .other-work{.row{a{display: none;}}}
+}
 @media all and (max-width: 800px){
     .grid{
         width: 100%;
@@ -10,8 +21,47 @@
     [class*='col-']{
         width: auto;
         float: none;
+        padding-right: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        &:last-of-type{margin: 0px;}
+    }
+    .other-work{
+        .row{
+            .year{
+                float: none;
+                font-size: 12px;
+                color: $c_text;
+                margin: 0px 0px 10px 0px;
+            }
+            .name{
+                float: none;
+                margin: 0px 0px 10px 0px;
+                line-height: 1.5;
+            }
+            .type{
+                float: none;
+                display: block;
+                margin: 0px;
+            }
+        }
+    }
+    .masthead{
+        h1{line-height: 1.5;}
+    }
+}
+@media all and (max-width: 560px){
+    .masthead{
+        nav{
+            a{
+                display: block;
+                margin: 0px 0px 10px 0px;
+                padding: 0px 0px 10px 0px;
+                border-bottom: 1px solid lighten($c_text-light, 30%);
+                &:last-of-type{margin: 0px;}
+            }
+        }
     }
 }
