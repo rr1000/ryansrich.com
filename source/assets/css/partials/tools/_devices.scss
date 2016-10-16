@@ -53,6 +53,35 @@
     }
 }
 @media all and (max-width: 560px){
+    .main-header{
+        nav{
+            display: none;
+            position: fixed;
+            padding: 50px 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 998;
+            margin: 0px;
+            background-color: $c_gray-blue;
+            a{
+                text-align: center;
+                display: block;
+                font-size: 22px;
+                font-family: $f_light;
+                margin: 0px 0px 20px 0px;
+                color: $c_white;
+            }
+        }
+        .menu{
+            display: block;
+            z-index: 999;
+        }
+        .w{color: $c_white;}
+    }
     .masthead{
         nav{
             a{

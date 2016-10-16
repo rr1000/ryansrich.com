@@ -20,6 +20,14 @@
         margin: 15px 0px 0px 10px;
         @include border-radius(5px);
     }
+    .menu{
+        font-size: 20px;
+        color: $c_black;
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 14px;
+    }
     nav{
         float: right;
         margin: 17px 0px 0px 0px;

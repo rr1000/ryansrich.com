@@ -1,8 +1,11 @@
 $('document').ready(function(){
     // Mobile menu
     var nav = $('.main-header nav');
-    var navIcon = $('.main-header .icon-nav');
-    navIcon.click(function(){ nav.fadeToggle(350); });
+    var navIcon = $('.main-header .menu');
+    navIcon.click(function(){
+        nav.fadeToggle(350);
+        $(this).toggleClass('w');
+    });
     // Smooth scroll
     $(function(){
         $('a[href*="#"]:not([href="#"])').click(function(){
