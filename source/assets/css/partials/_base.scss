@@ -5,13 +5,13 @@
 @import "tools/mixins";
 @import "tools/color";
 @import "tools/type";
-@import "tools/keys";
+@import "tools/icons";
 //Sections
+@import "sections/body";
 @import "sections/header";
 @import "sections/masthead";
 @import "sections/work";
-@import "sections/about";
-@import "sections/contact";
 @import "sections/footer";
+@import "sections/hero";
 //Devices
 @import "tools/devices";

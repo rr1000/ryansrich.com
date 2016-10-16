@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:300,400,400i,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700,900');
+@font-face{ font-family: g_light; src: url('../fonts/g_light.otf'); }
+@font-face{ font-family: g; src: url('../fonts/g_book.otf'); }
+@font-face{ font-family: g_italic; src: url('../fonts/g_book_italic.otf'); }
+@font-face{ font-family: g_medium; src: url('../fonts/g_medium.otf'); }
+@font-face{ font-family: g_medium_italic; src: url('../fonts/g_medium_italic.otf'); }
+@font-face{ font-family: g_bold; src: url('../fonts/g_bold.otf'); }
+@font-face{ font-family: g_bold_italic; src: url('../fonts/g_bold_italic.otf'); }
 
-$f_serif: 'Cormorant Infant', serif;
-$f_sans: 'Roboto', sans-serif;
-
-body{
-    font-family: $f_sans;
-    font-size: 14px;
-}
+$f_backup: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$f_light: g_light, $f_backup;
+$f_book: g, $f_backup;
+$f_italic: g_italic, $f_backup;
+$f_medium: g_medium, $f_backup;
+$f_medium_italic: g_medium_italic, $f_backup;
+$f_bold: g_bold, $f_backup;
+$f_bold_italic: g_bold_italic, $f_backup;

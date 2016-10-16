@@ -18,4 +18,11 @@ $('document').ready(function(){
             }
         });
     });
+    document.getElementById('stratum').addEventListener('loadedmetadata', function(){
+        this.currentTime = 50;
+    }, false);
+    // Video controls
+    $('video').click(function(){
+        this.paused ? this.play() : this.pause();
+    });
 });
