@@ -51,6 +51,23 @@
     .masthead{
         h1{line-height: 1.5;}
     }
+    .insp{
+        margin: 0px 0px 40px 0px;
+        padding: 40px 30px;
+        .row{
+            span{
+                display: block;
+                float: none;
+                margin: 0px 0px 10px 0px;
+                &:last-of-type{margin: 0px 0px 10px 0px;}
+            }
+            .name,
+            .author{
+                line-height: 1.5;
+            }
+        }
+    }
+
 }
 @media all and (max-width: 560px){
     .main-header{

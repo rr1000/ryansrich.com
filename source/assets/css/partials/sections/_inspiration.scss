@@ -1,0 +1,157 @@
+.inspiration{
+    .main-header{
+        background-color: $c_gray-blue;
+        a.logo{
+            background: url('../img/logo-w.svg');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .menu{color: $c_text-light;}
+        .pill{
+            color: $c_text-light;
+            background-color: $c_black;
+        }
+        nav{
+            a{color: $c_text-light;}
+        }
+    }
+    .masthead{
+        background-color: $c_gray-blue;
+        h1{color: $c_white;}
+        p{color: $c_text-light;}
+    }
+}
+.insp{
+    margin: 0px 0px 80px 0px;
+    padding: 40px 20px;
+    background-color: $c_black;
+    h1{
+        font-size: 22px;
+        font-family: $f_bold;
+        color: $c_white;
+        padding: 0px 0px 20px 0px;
+    }
+    .row{
+        @extend.cf;
+        margin: 0px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
+        border-bottom: 1px solid darken($c_text, 20%);
+        &:last-of-type{margin: 0px; padding: 0px; border: 0px;}
+        span{
+            display: block;
+            float: left;
+            margin: 0px 20px 0px 0px;
+            &:last-of-type{margin: 10px 0px 0px 0px;}
+        }
+        .name{font-family: $f_italic; color: $c_white;}
+        .name,
+        .author{margin: 10px 20px 0px 0px;}
+        .icon{
+            border: 3px solid $c_text-light;
+            @include border-radius(20px);
+        }
+        // All the icons - my god
+        .i-branded-interactions{
+            background: url('../img/icons/i-branded-interactions.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .i-visual-display{
+            background: url('../img/icons/i-visual-display.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .i-universal-principles{
+            background: url('../img/icons/i-universal-principles.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .i-the-interface{
+            background: url('../img/icons/i-the-interface.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .i-multiple-signatures{
+            background: url('../img/icons/i-multiple-signatures.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .i-change-design{
+            background: url('../img/icons/i-change-design.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .i-thoughts-design{
+            background: url('../img/icons/i-thoughts-design.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+    }
+}
+.playing{
+    background-color: $c_gray-blue;
+    padding: 0px 20px 40px 20px;
+    .bg.closer{
+        background-image: url('../img/closer.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        @include border-radius-top(19px);
+    }
+    .bg.glowing{
+        background-image: url('../img/glowing.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        @include border-radius-top(19px);
+    }
+    h1{
+        font-size: 22px;
+        font-family: $f_bold;
+        color: $c_white;
+        padding: 0px 0px 20px 0px;
+    }
+    .player{
+        background-color: $c_white;
+        -moz-box-shadow: 0px 3px 10px 0px $c_black;
+        -webkit-box-shadow: 0px 3px 10px 0px $c_black;
+        box-shadow: 0px 3px 10px 0px $c_black;
+        @include border-radius(20px);
+        .album{
+            padding: 20px 20px 10px 20px;
+            font-size: 22px;
+            font-family: $f_light;
+            color: $c_text;
+        }
+        .artist{
+            font-family: $f_medium_italic;
+            padding: 0px 20px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.8;
+            padding: 20px;
+            a{color: $c_black;}
+        }
+        .wr{position: relative;}
+        .play{
+            top: 20px;
+            right: 20px;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background: url('../img/play.svg');
+            background-size: 50px 50px;
+        }
+    }
+}
