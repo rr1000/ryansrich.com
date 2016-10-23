@@ -1,0 +1,24 @@
+{
+    "name": "rrich",
+    "description": "rrich.io",
+    "scripts": {
+        "build": "bundle exec middleman build",
+        "sass": "node-sass --include-path scss source/assets/css/styles.scss source/assets/css/styles.css",
+        "serve": "bundle exec middleman server -p 2020",
+        "watch": "nodemon -e scss -x \"npm run sass\"",
+        "boom": "concurrently --kill-others 'npm run content' 'npm run watch' 'npm run serve'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:rr1000/ryansrich.com.git",
+        "version": "9.0.1",
+        "private": false
+    },
+    "author": "Ryan Rich",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^2.2.0",
+        "node-sass": "^3.8.0",
+        "nodemon": "^1.10.0"
+    }
+}
