@@ -6,7 +6,7 @@
         "sass": "node-sass --include-path scss source/assets/css/styles.scss source/assets/css/styles.css",
         "serve": "bundle exec middleman server -p 2020",
         "watch": "nodemon -e scss -x \"npm run sass\"",
-        "boom": "concurrently --kill-others 'npm run content' 'npm run watch' 'npm run serve'"
+        "boom": "concurrently --kill-others 'npm run watch' 'npm run serve'"
     },
     "repository": {
         "type": "git",

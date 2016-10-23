@@ -96,11 +96,32 @@
         }
     }
 }
+.was-playing{
+    @extend .insp;
+    margin: 0px;
+    background-color: $c_gray-blue;
+}
 .playing{
     background-color: $c_gray-blue;
     padding: 0px 20px 40px 20px;
     .bg.closer{
         background-image: url('../img/closer.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        @include border-radius-top(19px);
+    }
+    .bg.shadow{
+        background-image: url('../img/shadow.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        @include border-radius-top(19px);
+    }
+    .bg.gales{
+        background-image: url('../img/gales.png');
         background-position: 50% 50%;
         background-size: cover;
         width: 100%;
@@ -141,6 +162,7 @@
             font-size: 14px;
             line-height: 1.8;
             padding: 20px;
+            min-height: 165px;
             a{color: $c_black;}
         }
         .wr{position: relative;}

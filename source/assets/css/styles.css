@@ -130,21 +130,22 @@ table {
 .col-7-12 {
   width: 58.33%; }
 
-.cf:before, .main-header:before, .work .video-section .content:before, .other-work .row:before, .hero .block header:before, .experience .experience-block .meta:before, .insp .row:before,
+.cf:before, .main-header:before, .work .video-section .content:before, .other-work .row:before, .hero .block header:before, .experience .experience-block .meta:before, .insp .row:before, .was-playing .row:before,
 .cf:after,
 .main-header:after,
 .work .video-section .content:after,
 .other-work .row:after,
 .hero .block header:after,
 .experience .experience-block .meta:after,
-.insp .row:after {
+.insp .row:after,
+.was-playing .row:after {
   content: " ";
   display: table; }
 
-.cf:after, .main-header:after, .work .video-section .content:after, .other-work .row:after, .hero .block header:after, .experience .experience-block .meta:after, .insp .row:after {
+.cf:after, .main-header:after, .work .video-section .content:after, .other-work .row:after, .hero .block header:after, .experience .experience-block .meta:after, .insp .row:after, .was-playing .row:after {
   clear: both; }
 
-.cf, .main-header, .work .video-section .content, .other-work .row, .hero .block header, .experience .experience-block .meta, .insp .row {
+.cf, .main-header, .work .video-section .content, .other-work .row, .hero .block header, .experience .experience-block .meta, .insp .row, .was-playing .row {
   *zoom: 1; }
 
 @font-face {
@@ -2757,81 +2758,109 @@ body {
   .inspiration .masthead p {
     color: #8289a5; }
 
-.insp {
+.insp, .was-playing {
   margin: 0px 0px 80px 0px;
   padding: 40px 20px;
   background-color: #010101; }
-  .insp h1 {
+  .insp h1, .was-playing h1 {
     font-size: 22px;
     font-family: g_bold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #FFFFFF;
     padding: 0px 0px 20px 0px; }
-  .insp .row {
+  .insp .row, .was-playing .row {
     margin: 0px 0px 20px 0px;
     padding: 0px 0px 20px 0px;
     border-bottom: 1px solid #262935; }
-    .insp .row:last-of-type {
+    .insp .row:last-of-type, .was-playing .row:last-of-type {
       margin: 0px;
       padding: 0px;
       border: 0px; }
-    .insp .row span {
+    .insp .row span, .was-playing .row span {
       display: block;
       float: left;
       margin: 0px 20px 0px 0px; }
-      .insp .row span:last-of-type {
+      .insp .row span:last-of-type, .was-playing .row span:last-of-type {
         margin: 10px 0px 0px 0px; }
-    .insp .row .name {
+    .insp .row .name, .was-playing .row .name {
       font-family: g_italic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       color: #FFFFFF; }
-    .insp .row .name,
-    .insp .row .author {
+    .insp .row .name, .was-playing .row .name,
+    .insp .row .author, .was-playing .row .author {
       margin: 10px 20px 0px 0px; }
-    .insp .row .icon {
+    .insp .row .icon, .was-playing .row .icon {
       border: 3px solid #8289a5;
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px; }
-    .insp .row .i-branded-interactions {
+    .insp .row .i-branded-interactions, .was-playing .row .i-branded-interactions {
       background: url("../img/icons/i-branded-interactions.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
-    .insp .row .i-visual-display {
+    .insp .row .i-visual-display, .was-playing .row .i-visual-display {
       background: url("../img/icons/i-visual-display.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
-    .insp .row .i-universal-principles {
+    .insp .row .i-universal-principles, .was-playing .row .i-universal-principles {
       background: url("../img/icons/i-universal-principles.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
-    .insp .row .i-the-interface {
+    .insp .row .i-the-interface, .was-playing .row .i-the-interface {
       background: url("../img/icons/i-the-interface.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
-    .insp .row .i-multiple-signatures {
+    .insp .row .i-multiple-signatures, .was-playing .row .i-multiple-signatures {
       background: url("../img/icons/i-multiple-signatures.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
-    .insp .row .i-change-design {
+    .insp .row .i-change-design, .was-playing .row .i-change-design {
       background: url("../img/icons/i-change-design.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
-    .insp .row .i-thoughts-design {
+    .insp .row .i-thoughts-design, .was-playing .row .i-thoughts-design {
       background: url("../img/icons/i-thoughts-design.png");
       height: 40px;
       width: 40px;
       background-size: 40px 40px; }
+
+.was-playing {
+  margin: 0px;
+  background-color: #131419; }
 
 .playing {
   background-color: #131419;
   padding: 0px 20px 40px 20px; }
   .playing .bg.closer {
     background-image: url("../img/closer.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    -webkit-border-top-left-radius: 19px;
+    -webkit-border-top-right-radius: 19px;
+    -moz-border-radius-topleft: 19px;
+    -moz-border-radius-topright: 19px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px; }
+  .playing .bg.shadow {
+    background-image: url("../img/shadow.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    -webkit-border-top-left-radius: 19px;
+    -webkit-border-top-right-radius: 19px;
+    -moz-border-radius-topleft: 19px;
+    -moz-border-radius-topright: 19px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px; }
+  .playing .bg.gales {
+    background-image: url("../img/gales.png");
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -2878,7 +2907,8 @@ body {
     .playing .player p {
       font-size: 14px;
       line-height: 1.8;
-      padding: 20px; }
+      padding: 20px;
+      min-height: 165px; }
       .playing .player p a {
         color: #010101; }
     .playing .player .wr {
@@ -2941,20 +2971,22 @@ body {
     margin: 0px; }
   .masthead h1 {
     line-height: 1.5; }
-  .insp {
+  .insp, .was-playing {
     margin: 0px 0px 40px 0px;
     padding: 40px 30px; }
-    .insp .row span {
+    .insp .row span, .was-playing .row span {
       display: block;
       float: none;
       margin: 0px 0px 10px 0px; }
-      .insp .row span:last-of-type {
+      .insp .row span:last-of-type, .was-playing .row span:last-of-type {
         margin: 0px 0px 10px 0px; }
-    .insp .row .name,
-    .insp .row .author {
+    .insp .row .name, .was-playing .row .name,
+    .insp .row .author, .was-playing .row .author {
       line-height: 1.5; } }
 
 @media all and (max-width: 560px) {
+  .playing .player .album {
+    padding: 20px 60px 10px 20px; }
   .main-header nav {
     display: none;
     position: fixed;
