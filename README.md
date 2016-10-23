@@ -13,6 +13,7 @@
 ## Full list of commands:
 
 | Command | Action |
+| ------- | ------ |
 | `build` | This command runs `bundle exec middleman build` to build the static output from Middleman. |
 | `sass`  | This command runs node sass. |
 | `serve` | This command runs the built in middleman server. |
