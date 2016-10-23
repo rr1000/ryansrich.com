@@ -1,10 +1,19 @@
 .masthead{
     padding: 0px 20px 110px 20px;
     h1{
-        font-size: 22px;
+        font-size: 30px;
+        line-height: 1.5;
         font-family: $f_bold;
         color: $c_black;
         margin: 0px 0px 20px 0px;
+    }
+    h2{
+        font-size: 14px;
+        font-family: $f_bold;
+        color: lighten($c_text, 30%);
+        margin: 0px 0px 20px 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
     nav{
         margin: 0px 0px 20px 0px;
