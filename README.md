@@ -12,9 +12,9 @@
 
 ## Full list of commands:
 
-Command | Action
-`build` | This command runs `bundle exec middleman build` to build the static output from Middleman.
-`sass`  | This command runs node sass.
-`serve` | This command runs the built in middleman server.
-`watch` | This command watches for changes to style files.
-`boom`  | This command runs all the commands concurrently.
+| Command | Action |
+| `build` | This command runs `bundle exec middleman build` to build the static output from Middleman. |
+| `sass`  | This command runs node sass. |
+| `serve` | This command runs the built in middleman server. |
+| `watch` | This command watches for changes to style files. |
+| `boom`  | This command runs all the commands concurrently. |
