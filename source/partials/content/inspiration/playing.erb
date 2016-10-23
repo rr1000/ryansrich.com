@@ -1,25 +1,14 @@
 <section class="playing">
     <div class="grid">
         <h1>Now playing&hellip;</h1>
-        <div class="col-6-12">
+        <div class="col-6-12" v-for="play in plays">
             <div class="player">
-                <div class="bg closer"></div>
+                <div class="bg" v-bind:class="play.albumBg"></div>
                 <div class="wr">
-                    <a href="//itun.es/us/rvc5p" target="_blank"><div class="play"></div></a>
-                    <div class="album">Closer</div>
-                    <div class="artist">Joy Division</div>
-                    <p>Closer is the second and final studio album by the English rock band Joy Division. It was released on 18 July 1980 on Factory Records, following the May 1980 suicide of lead singer Ian Curtis. The album was produced&hellip;<a href="//en.wikipedia.org/wiki/Closer_(Joy_Division_album)" target="_blank">[1]</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-6-12">
-            <div class="player">
-                <div class="bg glowing"></div>
-                <div class="wr">
-                    <a href="//itun.es/us/hVBVbb" target="_blank"><div class="play"></div></a>
-                    <div class="album">The Glowing Man</div>
-                    <div class="artist">Swans</div>
-                    <p>Swans (/swɒnz/) is an American experimental rock band originally active from 1982 to 1997, led by singer, songwriter and multi-instrumentalist Michael Gira. The band was one of the few groups to emerge from the early 1980s New York&hellip;<a href="//en.wikipedia.org/wiki/Swans_(band)#Discography" target="_blank">[1]</a></p>
+                    <a v-bind:href="play.link" target="_blank"><div class="play"></div></a>
+                    <div class="album">{{play.album}}</div>
+                    <div class="artist">{{play.artist}}</div>
+                    <p>{{play.text}}&hellip; <a v-bind:href="play.source" target="_blank">&rarr;</a></p>
                 </div>
             </div>
         </div>
