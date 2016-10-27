@@ -24,4 +24,4 @@ var app = new Vue({
             { artist: "Swans", name: "The Glowing Man" }
         ]
     }
-})
+});
