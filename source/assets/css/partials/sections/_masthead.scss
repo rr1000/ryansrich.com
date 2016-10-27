@@ -3,13 +3,15 @@
     h1{
         font-size: 30px;
         line-height: 1.5;
-        font-family: $f_bold;
+        font-weight: 600;
+        font-family: $f_sans;
         color: $c_black;
         margin: 0px 0px 20px 0px;
     }
     h2{
         font-size: 14px;
-        font-family: $f_bold;
+        font-family: $f_sans;
+        font-weight: 700;
         color: lighten($c_text, 30%);
         margin: 0px 0px 20px 0px;
         text-transform: uppercase;
@@ -22,7 +24,8 @@
             display: inline-block;
             margin: 0px 20px 0px 0px;
             color: $c_github;
-            font-family: $f_medium;
+            font-family: $f_sans;
+            font-weight: 500;
             &:first-of-type{color: $c_twitter;}
             &:nth-child(3){color: $c_instagram}
             &:last-of-type{color: $c_bitcoin; margin: 0px;}
@@ -31,13 +34,14 @@
     p{
         max-width: 600px;
         line-height: 1.8;
-        a{text-decoration: none;color: $c_catalyze;font-family: $f_medium;}
+        a{text-decoration: none;color: $c_catalyze;font-family: $f_sans;font-weight: 500;}
     }
 }
 .badge{
     position: fixed;
     font-size: 12px;
-    font-family: $f_medium;
+    font-family: $f_sans;
+    font-weight: 500;
     top: 20px;
     right: 20px;
     padding: 10px;

@@ -13,7 +13,8 @@
         display: block;
         float: left;
         font-size: 12px;
-        font-family: $f_bold;
+        font-family: $f_sans;
+        font-weight: 700;
         color: $c_text-light;
         background-color: $c_gray-light;
         padding: 3px 5px;
@@ -36,7 +37,8 @@
             display: inline-block;
             margin: 0px 0px 0px 20px;
             color: $c_black;
-            font-family: $f_medium;
+            font-family: $f_sans;
+            font-weight: 500;
         }
     }
 }

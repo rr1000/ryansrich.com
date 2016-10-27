@@ -13,7 +13,8 @@
         @include border-radius(5px);
         h1{
             font-size: 22px;
-            font-family: $f_bold;
+            font-family: $f_sans;
+            font-weight: 700;
             color: $c_white;
             margin: 0px 0px 20px 0px;
         }

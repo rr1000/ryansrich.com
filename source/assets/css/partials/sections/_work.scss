@@ -4,7 +4,8 @@
     background-color: $c_gray-blue;
     h1{
         font-size: 22px;
-        font-family: $f_bold;
+        font-family: $f_sans;
+        font-weight: 700;
         color: $c_white;
         padding: 0px 0px 20px 0px;
     }
@@ -57,12 +58,14 @@
             @extend .cf;
             margin: 40px 0px 0px 0px;
             h1{
-                font-family: $f_light;
+                font-family: $f_sans;
+                font-weight: 300;
                 padding: 0px 0px 0px 0px;
                 margin: 0px 0px 10px 0px;
             }
             h3{
-                font-family: $f_medium;
+                font-family: $f_sans;
+                font-weight: 500;
                 color: $c_text-light;
                 margin: 0px 0px 10px 0px;
                 font-size: 16px;
@@ -99,7 +102,8 @@
     @include border-radius(5px);
     .row{
         font-size: 18px;
-        font-family: $f_light;
+        font-family: $f_sans;
+        font-weight: 300;
         padding: 0px 0px 20px 0px;
         border-bottom: 1px solid $c_text;
         margin: 0px 0px 20px 0px;

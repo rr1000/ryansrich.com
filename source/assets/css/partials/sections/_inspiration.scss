@@ -28,7 +28,8 @@
     background-color: $c_black;
     h1{
         font-size: 22px;
-        font-family: $f_bold;
+        font-family: $f_sans;
+        font-weight: 700;
         color: $c_white;
         padding: 0px 0px 20px 0px;
     }
@@ -44,7 +45,7 @@
             margin: 0px 20px 0px 0px;
             &:last-of-type{margin: 10px 0px 0px 0px;}
         }
-        .name{font-family: $f_italic; color: $c_white;}
+        .name{font-family: $f_sans;font-style:italic; color: $c_white;}
         .name,
         .author{margin: 10px 20px 0px 0px;}
         .icon{
@@ -138,7 +139,8 @@
     }
     h1{
         font-size: 22px;
-        font-family: $f_bold;
+        font-family: $f_sans;
+        font-weight: 700;
         color: $c_white;
         padding: 0px 0px 20px 0px;
     }
@@ -151,11 +153,14 @@
         .album{
             padding: 20px 20px 10px 20px;
             font-size: 22px;
-            font-family: $f_light;
+            font-family: $f_sans;
+            font-weight: 300;
             color: $c_text;
         }
         .artist{
-            font-family: $f_medium_italic;
+            font-family: $f_sans;
+            font-weight: 500;
+            font-style: italic;
             padding: 0px 20px;
         }
         p{

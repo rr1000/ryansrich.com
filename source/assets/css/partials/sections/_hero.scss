@@ -4,7 +4,8 @@
     h1{
         font-size: 22px;
         color: $c_text;
-        font-family: $f_bold;
+        font-family: $f_sans;
+        font-weight: 700;
         margin: 0px 0px 20px 0px;
     }
     .block{
@@ -17,10 +18,10 @@
             padding: 10px;
             @include border-radius-top(5px);
             @extend .cf;
-            h2{float: left;font-family: $f_bold;}
+            h2{float: left;font-family: $f_sans;font-weight: 700;}
             a{display: block;float: right;color: $c_text-light;}
         }
-        .date{font-size: 12px; font-family: $f_medium;color: $c_text-light;}
+        .date{font-size: 12px; font-family: $f_sans;font-weight: 500;color: $c_text-light;}
         p{
             font-size: 14px;
             margin: 10px 0px 0px 0px;
