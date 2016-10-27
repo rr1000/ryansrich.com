@@ -34,3 +34,14 @@
         a{text-decoration: none;color: $c_catalyze;font-family: $f_medium;}
     }
 }
+.badge{
+    position: fixed;
+    font-size: 12px;
+    font-family: $f_medium;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #F4F4F4;
+    box-shadow: inset 0px -1px 1px 0px rgba(58,64,90,0.30);
+    @include border-radius(20px);
+}
