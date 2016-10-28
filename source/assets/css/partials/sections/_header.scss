@@ -1,24 +1,15 @@
 .main-header{
     @extend .cf;
-    padding: 110px 20px 40px 20px;
-    a.logo{
-        float: left;
-        display: block;
-        background: url('../img/logo.svg');
-        height: 40px;
-        width: 40px;
-        background-size: 40px 40px;
-    }
+    padding: 40px 20px 0px 20px;
     .pill{
         display: block;
         float: left;
         font-size: 12px;
         font-family: $f_sans;
-        font-weight: 700;
-        color: $c_text-light;
+        font-weight: 500;
+        color: $c_text;
         background-color: $c_gray-light;
         padding: 3px 5px;
-        margin: 15px 0px 0px 10px;
         @include border-radius(5px);
     }
     .menu{
@@ -26,12 +17,12 @@
         color: $c_black;
         display: none;
         position: absolute;
+        top: 0px;
         right: 0px;
-        top: 14px;
     }
     nav{
         float: right;
-        margin: 17px 0px 0px 0px;
+        margin: 2px 0px 0px 0px;
         a{
             text-decoration: none;
             display: inline-block;

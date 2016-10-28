@@ -1,18 +1,72 @@
+.neue-masthead{
+    padding: 70px 20px;
+    .logo{
+        display: block;
+        background: url('../img/logo.svg');
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+        margin: 0px auto 30px auto;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 1.5;
+        font-weight: 700;
+        text-align: center;
+        max-width: 800px;
+        font-family: $f_sans;
+        color: $c_text;
+        margin: 0px auto 30px auto;
+    }
+    h2{
+        font-size: 12px;
+        font-family: $f_sans;
+        font-weight: 400;
+        color: lighten($c_text, 25%);
+        margin: 0px 0px 10px 0px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    nav{
+        margin: 0px auto 0px auto;
+        text-align: center;
+        a{
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            margin: 0px 10px 0px 10px;
+            color: $c_github;
+            font-family: $f_sans;
+            font-weight: 500;
+            &:first-of-type{color: $c_twitter;}
+            &:last-of-type{color: $c_instagram}
+        }
+    }
+    p{
+        max-width: 600px;
+        text-align: center;
+        margin: 0px auto 30px auto;
+        line-height: 1.8;
+        a{color: $c_black;text-decoration: underline;font-family: $f_sans;}
+    }
+}
+// Legacy masthead
 .masthead{
-    padding: 0px 20px 110px 20px;
+    padding: 70px 20px;
     h1{
         font-size: 30px;
         line-height: 1.5;
         font-weight: 600;
         font-family: $f_sans;
-        color: $c_black;
+        color: $c_text;
         margin: 0px 0px 20px 0px;
     }
     h2{
-        font-size: 14px;
+        font-size: 12px;
         font-family: $f_sans;
-        font-weight: 700;
-        color: lighten($c_text, 30%);
+        font-weight: 500;
+        color: lighten($c_text, 25%);
         margin: 0px 0px 20px 0px;
         text-transform: uppercase;
         letter-spacing: 1px;

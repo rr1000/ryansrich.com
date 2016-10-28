@@ -10,9 +10,13 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => tru
 set :url_root, 'http://ryansrich.com'
 
 activate :syntax, :wrap => true
-activate :livereload
 activate :search_engine_sitemap
-activate :directory_indexes
+
+configure :development do
+  activate :directory_indexes
+  activate :livereload
+end
+
 
 configure :build do
   activate :minify_css
