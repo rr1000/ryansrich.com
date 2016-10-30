@@ -9,8 +9,8 @@
         }
         .menu{color: $c_text-light;}
         .pill{
-            color: $c_text-light;
-            background-color: $c_black;
+            color: $c_white;
+            background-color: $c_text-light;
         }
         nav{
             a{color: $c_text-light;}
@@ -19,7 +19,7 @@
     .masthead{
         background-color: $c_gray-blue;
         h1{color: $c_white;}
-        p{color: $c_text-light;}
+        p{color: $c_text-light;a{color: $c_white;}}
     }
 }
 .insp{

@@ -22,6 +22,43 @@ var app = new Vue({
         albums:[
             { artist: "Joy Division", name: "Closer" },
             { artist: "Swans", name: "The Glowing Man" }
+        ],
+        books:[
+            {
+                class: 'icon i-multiple-signatures',
+                name: "Multiple Signatures: On Designers, Authors, Readers and Users",
+                author: "Michael Rock"
+            },
+            {
+                class: 'icon i-branded-interactions',
+                name: 'Branded Interactions: Creating the Digital Experience',
+                author: 'Marco Spies'
+            },
+            {
+                class: 'icon i-visual-display',
+                name: 'The Visual Display of Quantitative Information',
+                author: 'Edward Tufte'
+            },
+            {
+                class: 'icon i-universal-principles',
+                name: 'Universal Principles of Design',
+                author: 'William Lidwell &amp; Kritina Holden'
+            },
+            {
+                class: 'icon i-the-interface',
+                name: 'The Interface: IBM and the Transformation of Corporate Design',
+                author: 'John Harwood'
+            },
+            {
+                class: 'icon i-change-design',
+                name: 'Change by Design',
+                author: 'Tim Brown'
+            },
+            {
+                class: 'icon i-thoughts-design',
+                name: 'Thoughts on Design',
+                author: 'Paul Rand'
+            }
         ]
-    }
+    },
 });
