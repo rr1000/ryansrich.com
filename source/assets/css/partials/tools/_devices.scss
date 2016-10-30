@@ -66,6 +66,20 @@
             }
         }
     }
+    .previously-played{
+        padding: 40px 30px;
+        h1{line-height: 1.5;}
+        .row{
+            span{
+                display: block;
+                float: none;
+                margin: 0px 0px 10px 0px;
+                &:first-of-type{margin: 0px 10px 0px 0px;}
+            }
+            .album,
+            .artist{line-height: 1.5;}
+        }
+    }
     .neue-masthead{padding: 50px 20px;}
 }
 @media all and (max-width: 560px){

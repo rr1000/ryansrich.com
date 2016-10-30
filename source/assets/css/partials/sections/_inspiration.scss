@@ -97,11 +97,6 @@
         }
     }
 }
-.was-playing{
-    @extend .insp;
-    margin: 0px;
-    background-color: $c_gray-blue;
-}
 .playing{
     background-color: $c_gray-blue;
     padding: 0px 20px 40px 20px;
@@ -131,6 +126,22 @@
     }
     .bg.glowing{
         background-image: url('../img/glowing.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        @include border-radius-top(19px);
+    }
+    .bg.fangs{
+        background-image: url('../img/fangs.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        @include border-radius-top(19px);
+    }
+    .bg.atrocity{
+        background-image: url('../img/atrocity.png');
         background-position: 50% 50%;
         background-size: cover;
         width: 100%;
@@ -180,5 +191,33 @@
             background: url('../img/play.svg');
             background-size: 50px 50px;
         }
+    }
+}
+.previously-played{
+    padding: 40px 20px;
+    background-image: linear-gradient(45deg, #1738D3 0%, #FF5FE4 100%);
+    h1{
+        font-size: 22px;
+        font-family: $f_sans;
+        font-weight: 700;
+        color: $c_white;
+        padding: 0px 0px 20px 0px;
+    }
+    .row{
+        @extend .cf;
+        margin: 0px 0px 10px 0px;
+        padding: 0px 0px 10px 0px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        &:last-of-type{margin: 0px;padding: 0px;border: 0px;}
+        span{
+            display: block;
+            float: left;
+            color: $c_white;
+            font-size: 16px;
+            font-weight: 300;
+            &:first-of-type{margin: 0px 10px 0px 0px;}
+        }
+        .album{font-style: italic;}
+        .artist{color: rgba(255,255,255,0.5);}
     }
 }
