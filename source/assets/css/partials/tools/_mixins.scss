@@ -48,3 +48,8 @@
     -webkit-transform: rotate($r);
     transform: rotate($r);
 }
+@mixin transform($t){
+    -ms-transform: $t;
+    -webkit-transform: $t;
+    transform: $t;
+}

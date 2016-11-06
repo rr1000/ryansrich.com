@@ -8,6 +8,7 @@ body{
         &:hover{
             @include easing(350ms);
             @include opacity(0.6);
+            @include transform(translate(0px, 2px));
         }
     }
     .bar{
