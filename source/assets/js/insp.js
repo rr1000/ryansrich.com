@@ -3,23 +3,25 @@ var app = new Vue({
     data:{
         plays:[
             {
-                albumBg: 'fangs',
-                album: 'The Light',
-                link: '//itun.es/us/SJh0ab',
-                artist: 'Soft Fangs',
-                text: 'Raised in the outskirts of Massachusetts, now living in Brooklyn, Soft Fangs is the latest musical outlet of John Lutkevich. His songwriting, which has been compared to the likes of Elliott Smith, Sparklehorse, Radiohead and Nick Drake, combines introspective and poetic lyricism with fragile',
-                source: '//www.explodinginsoundrecords.com/soft-fangs'
+                albumBg: 'young',
+                album: 'Come On Die Young',
+                link: '//itun.es/us/ksrEp',
+                artist: 'Mogwai',
+                text: 'Come On Die Young (also known as CODY), is the second full-length studio album by the Scottish post-rock band Mogwai, released on 29 March 1999 by Chemikal Underground.',
+                source: 'https://en.wikipedia.org/wiki/Come_On_Die_Young'
             },
             {
-                albumBg: 'atrocity',
-                album: 'Atrocity Exhibition',
-                link: '//itun.es/us/Mlbheb',
-                artist: 'Danny Brown',
-                text: 'Atrocity Exhibition is the fourth studio album by American hip hop recording artist Danny Brown. It was released on September 27, 2016, by Warp Records. It is primarily produced by British producer Paul White. The album features guest appearances from Kendrick Lamar, Ab-Soul, Earl Sweatshirt',
-                source: '//en.wikipedia.org/wiki/Atrocity_Exhibition_(album)'
+                albumBg: 'yes',
+                album: 'Yes Lawd!',
+                link: '//itun.es/us/GrfZeb',
+                artist: 'NxWorries',
+                text: 'Yes Lawd! is the debut studio album by hip hop duo NxWorries, which consists of vocalist Anderson .Paak and producer Knxwledge. It was released on October 21, 2016, by Stones Throw Records. It is supported by four singles, "Suede", "Link Up", "Lyk Dis", and "Get Bigger / Do U Luv".',
+                source: '//en.wikipedia.org/wiki/Yes_Lawd!'
             }
         ],
         albums:[
+            { artist: 'Danny Brown', name: 'Attrocity Exhibition' },
+            { artist: 'Soft Fans', name: 'The Light' },
             { artist: 'Joy Division', name: 'Closer' },
             { artist: 'Swans', name: 'The Glowing Man' },
             { artist: 'Freddie Gibbs', name: 'Shadow of a Doubt' },

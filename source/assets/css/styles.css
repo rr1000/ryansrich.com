@@ -2955,6 +2955,30 @@ body {
     -moz-border-radius-topright: 19px;
     border-top-left-radius: 19px;
     border-top-right-radius: 19px; }
+  .playing .bg.young {
+    background-image: url("../img/young.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    -webkit-border-top-left-radius: 19px;
+    -webkit-border-top-right-radius: 19px;
+    -moz-border-radius-topleft: 19px;
+    -moz-border-radius-topright: 19px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px; }
+  .playing .bg.yes {
+    background-image: url("../img/yes.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    -webkit-border-top-left-radius: 19px;
+    -webkit-border-top-right-radius: 19px;
+    -moz-border-radius-topleft: 19px;
+    -moz-border-radius-topright: 19px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px; }
   .playing h1 {
     font-size: 22px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
