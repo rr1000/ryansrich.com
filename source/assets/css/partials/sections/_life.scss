@@ -1,15 +1,30 @@
-body{padding: 30px;background-color: $c_black;}
+body{
+    padding: 30px;
+    background-color: $c_white;
+    border-top: 10px solid $c_black;
+}
 p{
-    font-size: 20px;
-    color: $c_white;
-    max-width: 600px;
+    font-size: 30px;
+    color: $c_black;
+    max-width: 920px;
     font-family: $f_sans;
     line-height: 2;
     margin: 0px 0px 30px 0px;
+    font-weight: 900;
     &:last-of-type{margin: 0px;}
     a{
-        color: $c_white;
-        opacity: 0.5;
+        display: inline-block;
+        color: $c_blue;
         text-decoration: none;
+        @include easing(350ms);
+        &:hover{
+            color: $c_black;
+            @include easing(350ms);
+            @include transform(rotate(3deg));
+        }
     }
+}
+@media all and (max-width: 650px){
+    body{padding: 20px;border-top: 5px solid $c_black;}
+    p{font-size: 20px;}
 }
