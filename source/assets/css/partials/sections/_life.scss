@@ -22,6 +22,19 @@ p{
             @include easing(350ms);
             @include transform(rotate(3deg));
         }
+        &:active{
+            @include easing(350ms);
+            @include transform(rotate(-3deg));
+        }
+        &:visited{
+            color: #FF4BF5;
+            @include transform(rotate(3deg));
+            &:hover{
+                color: $c_black;
+                @include easing(350ms);
+                @include transform(rotate(3deg));
+            }
+        }
     }
 }
 @media all and (max-width: 650px){

@@ -2407,6 +2407,28 @@ p {
       -ms-transform: rotate(3deg);
       -webkit-transform: rotate(3deg);
       transform: rotate(3deg); }
+    p a:active {
+      -moz-transition: all 350ms ease;
+      -webkit-transition: all 350ms ease;
+      -o-transition: all 350ms ease;
+      transition: all 350ms ease;
+      -ms-transform: rotate(-3deg);
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg); }
+    p a:visited {
+      color: #FF4BF5;
+      -ms-transform: rotate(3deg);
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg); }
+      p a:visited:hover {
+        color: #010101;
+        -moz-transition: all 350ms ease;
+        -webkit-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease;
+        -ms-transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg); }
 
 @media all and (max-width: 650px) {
   body {
