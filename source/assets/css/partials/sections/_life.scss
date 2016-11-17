@@ -3,6 +3,30 @@ body{
     background-color: $c_white;
     border-top: 10px solid $c_black;
 }
+a{
+    display: inline-block;
+    color: $c_blue;
+    text-decoration: none;
+    @include easing(350ms);
+    &:hover{
+        color: $c_black;
+        @include easing(350ms);
+        @include transform(rotate(3deg));
+    }
+    &:active{
+        @include easing(350ms);
+        @include transform(rotate(-3deg));
+    }
+    &:visited{
+        color: #FF4BF5;
+        @include transform(rotate(3deg));
+        &:hover{
+            color: $c_black;
+            @include easing(350ms);
+            @include transform(rotate(3deg));
+        }
+    }
+}
 p{
     font-size: 30px;
     color: $c_black;
@@ -12,32 +36,30 @@ p{
     margin: 0px 0px 30px 0px;
     font-weight: 900;
     &:last-of-type{margin: 0px;}
-    a{
-        display: inline-block;
-        color: $c_blue;
-        text-decoration: none;
-        @include easing(350ms);
-        &:hover{
-            color: $c_black;
-            @include easing(350ms);
-            @include transform(rotate(3deg));
-        }
-        &:active{
-            @include easing(350ms);
-            @include transform(rotate(-3deg));
-        }
-        &:visited{
-            color: #FF4BF5;
-            @include transform(rotate(3deg));
-            &:hover{
-                color: $c_black;
-                @include easing(350ms);
-                @include transform(rotate(3deg));
-            }
-        }
+}
+ul{
+    list-style-type: disc;
+    margin: 0px 0px 0px 30px;
+    max-width: 920px;
+    li{
+        font-size: 30px;
+        color: $c_black;
+        font-family: $f_sans;
+        font-weight: 900;
+        margin: 0px 0px 20px 0px;
+        &:last-of-type{margin: 0px;}
     }
 }
 @media all and (max-width: 650px){
     body{padding: 20px;border-top: 5px solid $c_black;}
-    p{font-size: 20px;}
+    p{font-size: 20px;line-height: 1.5;}
+    ul{
+        margin: 10px 0px 0px 20px;
+        li{
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 0px 0px 5px 0px;
+        }
+    }
+
 }
