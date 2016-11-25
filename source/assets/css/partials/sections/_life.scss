@@ -1,65 +1,59 @@
 body{
     padding: 30px;
-    background-color: $c_white;
-    border-top: 10px solid $c_black;
+    background-color: #FEFDF1;
+    font-family: $f_sans;
+    border-top: 3px solid $c_black;
+    font-size: 16px;
 }
-a{
-    display: inline-block;
-    color: $c_blue;
-    text-decoration: none;
-    @include easing(350ms);
-    &:hover{
+header{
+    margin: 0px 0px 30px 0px;
+    h4,
+    h3{
+        font-weight: 500;
         color: $c_black;
-        @include easing(350ms);
-        @include transform(rotate(3deg));
+        text-align: center;
+        margin: 0px 0px 5px 0px;
     }
-    &:active{
-        @include easing(350ms);
-        @include transform(rotate(-3deg));
+    h4{color: $c_text;margin: 0px;}
+}
+.viz{
+    margin: 0px auto;
+    background: url('../img/viz.svg');
+    width: 101px;
+    height: 41px;
+    background-size: 101px 41px;
+}
+article{
+    margin: 30px auto 0px auto;
+    max-width: 400px;
+    p{
+        line-height: 1.8;
+        color: $c_text;
+        margin: 0px 0px 20px 0px;
     }
-    &:visited{
-        color: #FF4BF5;
-        @include transform(rotate(3deg));
+    h3{
+        font-weight: 500;
+        color: $c_black;
+        margin: 0px 0px 20px 0px;
+    }
+    a{
+        display: inline-block;
+        color: $c_blue;
+        font-weight: 500;
+        text-decoration: none;
+        @include easing(350ms);
         &:hover{
             color: $c_black;
             @include easing(350ms);
             @include transform(rotate(3deg));
         }
     }
-}
-p{
-    font-size: 30px;
-    color: $c_black;
-    max-width: 920px;
-    font-family: $f_sans;
-    line-height: 2;
-    margin: 0px 0px 30px 0px;
-    font-weight: 900;
-    &:last-of-type{margin: 0px;}
-}
-ul{
-    list-style-type: disc;
-    margin: 0px 0px 0px 30px;
-    max-width: 920px;
-    li{
-        font-size: 30px;
-        color: $c_black;
-        font-family: $f_sans;
-        font-weight: 900;
-        margin: 0px 0px 20px 0px;
-        &:last-of-type{margin: 0px;}
-    }
-}
-@media all and (max-width: 650px){
-    body{padding: 20px;border-top: 5px solid $c_black;}
-    p{font-size: 20px;line-height: 1.5;}
     ul{
-        margin: 10px 0px 0px 20px;
+        list-style: disc;
+        padding: 0px 0px 0px 20px;
         li{
-            font-size: 20px;
-            line-height: 1.5;
-            margin: 0px 0px 5px 0px;
+            line-height: 1.8;
+            color: $c_text;
         }
     }
-
 }
