@@ -130,15 +130,16 @@ table {
 .col-7-12 {
   width: 58.33%; }
 
-.cf:before,
-.cf:after {
+.cf:before, .hike-header:before,
+.cf:after,
+.hike-header:after {
   content: " ";
   display: table; }
 
-.cf:after {
+.cf:after, .hike-header:after {
   clear: both; }
 
-.cf {
+.cf, .hike-header {
   *zoom: 1; }
 
 @font-face {
@@ -2393,6 +2394,21 @@ header {
   header h4 {
     color: #7A848D;
     margin: 0px; }
+  header a {
+    display: block;
+    text-decoration: none;
+    -moz-transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    header a:hover {
+      -moz-transition: all 350ms ease;
+      -webkit-transition: all 350ms ease;
+      -o-transition: all 350ms ease;
+      transition: all 350ms ease;
+      -ms-transform: rotate(3deg);
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg); }
 
 .viz {
   margin: 0px auto;
@@ -2436,6 +2452,155 @@ article {
     article ul li {
       line-height: 1.8;
       color: #7A848D; }
+
+body.outside {
+  background-color: #252924;
+  border-top: 3px solid black; }
+  body.outside header h3 {
+    color: #FFFFFF; }
+  body.outside header h4 {
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    color: #FFFFFF; }
+  body.outside img {
+    display: block;
+    width: 100%;
+    margin: 0px auto; }
+  body.outside article p {
+    margin: 0px;
+    padding: 0px;
+    color: #FFFFFF; }
+    body.outside article p a {
+      color: #99EF78; }
+  body.outside .hike-block {
+    max-width: 750px;
+    margin: 30px auto 0px auto;
+    color: #FFFFFF; }
+    body.outside .hike-block span {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0px; }
+    body.outside .hike-block .icon-location {
+      background: url("../img/icons/icon-location.svg");
+      background-size: 20px 20px;
+      height: 20px;
+      width: 20px; }
+    body.outside .hike-block .icon-distance {
+      background: url("../img/icons/icon-distance.svg");
+      background-size: 35px 18px;
+      height: 18px;
+      width: 35px; }
+    body.outside .hike-block .icon-elevation {
+      background: url("../img/icons/icon-elevation.svg");
+      background-size: 35px 14px;
+      height: 14px;
+      width: 35px; }
+    body.outside .hike-block img {
+      -moz-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
+      -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6); }
+    body.outside .hike-block .meta {
+      padding: 30px;
+      margin: 0px 0px 30px 0px;
+      background-color: rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+    body.outside .hike-block h1 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700; }
+    body.outside .hike-block h2, body.outside .hike-block h3, body.outside .hike-block h4 {
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
+      display: inline-block;
+      margin: 0px 20px 0px 0px;
+      font-weight: 300;
+      position: relative;
+      padding: 1px 0px 0px 25px; }
+    body.outside .hike-block h3 {
+      padding: 1px 0px 0px 40px; }
+
+.hike-header {
+  margin: 0px 0px 20px 0px;
+  position: relative; }
+  .hike-header h1 {
+    float: left; }
+  .hike-header .date {
+    float: left;
+    margin: 0px 0px 0px 10px;
+    font-size: 11px;
+    padding: 3px 10px;
+    font-weight: 700;
+    color: #3e443c;
+    background-image: -webkit-linear-gradient(#BFFFB1 0%, #97EE74 100%);
+    background-image: -o-linear-gradient(#BFFFB1 0%, #97EE74 100%);
+    background-image: linear-gradient(#BFFFB1 0%, #97EE74 100%);
+    box-shadow: inset 0 -1px 1px 0 rgba(21, 63, 25, 0.5);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px; }
+  .hike-header .trail-waterline {
+    background: url("../img/trails/trail-waterline-001.png");
+    background-size: 227px 37px;
+    position: absolute;
+    right: 0px;
+    width: 227px;
+    height: 36px; }
+  .hike-header .trail-lower-macleay-park {
+    background: url("../img/trails/trail-lower-macleay-park-002.png");
+    background-size: 227px 47px;
+    position: absolute;
+    right: 0px;
+    width: 227px;
+    height: 46px; }
+  .hike-header .trail-latourell-falls-loop-trail {
+    background: url("../img/trails/trail-latourell-falls-loop-trail-003.png");
+    background-size: 227px 94px;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 227px;
+    height: 94px; }
+
+@media all and (max-width: 710px) {
+  [class*='trail-'] {
+    display: none; } }
+
+@media all and (max-width: 500px) {
+  body.outside .hike-header h1,
+  body.outside .hike-header .date {
+    float: none;
+    padding: 0px;
+    margin: 0px; }
+  body.outside .hike-header h1 {
+    margin: 0px 0px 10px 0px; }
+  body.outside .hike-header .date {
+    color: #99EF78;
+    background-image: -webkit-linear-gradient(transparent 0%, transparent 100%);
+    background-image: -o-linear-gradient(transparent 0%, transparent 100%);
+    background-image: linear-gradient(transparent 0%, transparent 100%);
+    box-shadow: inset 0 -1px 1px 0 rgba(21, 63, 25, 0);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px; }
+  body.outside .hike-block .meta {
+    padding: 20px; }
+  body.outside .hike-block h2, body.outside .hike-block h3, body.outside .hike-block h4 {
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    display: block;
+    margin: 0px 0px 10px 0px;
+    padding: 1px 0px 10px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  body.outside .hike-block h3 {
+    padding: 1px 0px 10px 40px; } }
 
 @media all and (max-width: 990px) {
   .badge {

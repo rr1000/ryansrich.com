@@ -1,0 +1,25 @@
+<%= partial "partials/header"%>
+<section id="outside">
+    <article>
+        <p>Welcome to the outside project. Here you can see most of the hikes I've done over the last year. The UI was built with SVG and <a href="//vuejs.org/" target="_blank">Vue.js</a>. The goal for 2017 is to hit 104 hikes in 52 weeks.</p>
+    </article>
+    <div class="hike-block" v-for="hike in hikes">
+        <div class="meta">
+            <div class="hike-header">
+                <h1>{{hike.hikeName}}</h1>
+                <div class="date">{{hike.hikeDate}}</div>
+                <div v-bind:class="hike.hikeTrail"></div>
+            </div>
+            <h2><span class="icon-location"></span> {{hike.hikeLocation}}</h2>
+            <h3><span class="icon-distance"></span> {{hike.hikeDistance}}</h3>
+            <h3><span class="icon-elevation"></span> {{hike.hikeElevation}}</h3>
+        </div>
+        <div class="cover">
+            <img v-bind:src="hike.hikeCover" v-bind:alt="hike.hikeName">
+        </div>
+    </div>
+</section>
+<!-- Load CDNs -->
+<script src="//unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="/assets/js/outside.js"></script>
