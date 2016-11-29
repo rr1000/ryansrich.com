@@ -2419,7 +2419,8 @@ header {
 
 article {
   margin: 30px auto 0px auto;
-  max-width: 400px; }
+  max-width: 520px;
+  font-size: 16px; }
   article p {
     line-height: 1.8;
     color: #7A848D;
@@ -2452,6 +2453,22 @@ article {
     article ul li {
       line-height: 1.8;
       color: #7A848D; }
+
+.notification {
+  margin: 30px auto 0px auto;
+  max-width: 520px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  .notification strong {
+    font-weight: 700; }
 
 body.outside {
   background-color: #252924;
@@ -2567,6 +2584,28 @@ body.outside {
     right: 0px;
     width: 227px;
     height: 94px; }
+  .hike-header .trail-wildwood-trail {
+    background: url("../img/trails/trail-wildwood-trail-004.png");
+    background-size: 227px 35px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 227px;
+    height: 35px; }
+  .hike-header .trail-upper-macleay-park {
+    background: url("../img/trails/trail-upper-macleay-park-005.png");
+    background-size: 227px 47px;
+    position: absolute;
+    right: 0px;
+    width: 227px;
+    height: 46px; }
+  .hike-header .trail-dogwood {
+    background: url("../img/trails/trail-dogwood-006.png");
+    background-size: 228px 60px;
+    position: absolute;
+    right: 0px;
+    width: 228px;
+    height: 60px; }
 
 @media all and (max-width: 710px) {
   [class*='trail-'] {

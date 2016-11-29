@@ -116,6 +116,31 @@ body.outside{
         width: 227px;
         height: 94px;
     }
+    .trail-wildwood-trail{
+        background: url('../img/trails/trail-wildwood-trail-004.png');
+        background-size: 227px 35px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 227px;
+        height: 35px;
+    }
+    .trail-upper-macleay-park{
+        background: url('../img/trails/trail-upper-macleay-park-005.png');
+        background-size: 227px 47px;
+        position: absolute;
+        right: 0px;
+        width: 227px;
+        height: 46px;
+    }
+    .trail-dogwood{
+        background: url('../img/trails/trail-dogwood-006.png');
+        background-size: 228px 60px;
+        position: absolute;
+        right: 0px;
+        width: 228px;
+        height: 60px;
+    }
 }
 @media all and (max-width: 710px){
     [class*='trail-']{display: none;}

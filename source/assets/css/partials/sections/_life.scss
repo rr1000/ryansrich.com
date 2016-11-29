@@ -34,7 +34,8 @@ header{
 }
 article{
     margin: 30px auto 0px auto;
-    max-width: 400px;
+    max-width: 520px;
+    font-size: 16px;
     p{
         line-height: 1.8;
         color: $c_text;
@@ -65,4 +66,15 @@ article{
             color: $c_text;
         }
     }
+}
+.notification{
+    margin: 30px auto 0px auto;
+    max-width: 520px;
+    line-height: 1.5;
+    color: $c_white;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    strong{font-weight: 700;}
+    @include opacity(0.5);
+    @include border-radius(5px);
 }

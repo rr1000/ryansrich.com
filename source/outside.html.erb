@@ -1,8 +1,15 @@
+---
+title: Outside
+sum: Fitting ideas into tiny boxes on screens.
+---
 <%= partial "partials/header"%>
 <section id="outside">
     <article>
-        <p>Welcome to the outside project. Here you can see most of the hikes I've done over the last year. The UI was built with SVG and <a href="//vuejs.org/" target="_blank">Vue.js</a>. The goal for 2017 is to hit 104 hikes in 52 weeks.</p>
+        <p>Welcome to the outside project. Here you can see most of the hikes I've done over the last year. We successfully completed 42 hikes in 2016 🌤. The goal for 2017 is to hit 104 hikes in 52 weeks. The trail maps were created in Sketch using data from <a href="//alltrails.com" target="_blank">all trails</a>. To make the UI more manageable I'm using <a href="//vuejs.org/" target="_blank">Vue.js</a>.</p>
     </article>
+    <div class="notification">
+        <p><strong>Note:</strong> I'm still importing hikes (digging through photos). Stay tuned for all 42!</p>
+    </div>
     <div class="hike-block" v-for="hike in hikes">
         <div class="meta">
             <div class="hike-header">
