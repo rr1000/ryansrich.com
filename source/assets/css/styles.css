@@ -2377,11 +2377,10 @@ table {
   content: "\f30c"; }
 
 body {
-  padding: 30px;
-  background-color: #FEFDF1;
+  padding: 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  border-top: 3px solid #010101;
-  font-size: 16px; }
+  font-size: 22px;
+  font-weight: 400; }
 
 header {
   margin: 0px 0px 30px 0px; }
@@ -2411,48 +2410,48 @@ header {
       transform: rotate(3deg); }
 
 .viz {
-  margin: 0px auto;
+  margin: 0px 0px 20px 0px;
   background: url("../img/viz.svg");
   width: 101px;
   height: 41px;
   background-size: 101px 41px; }
 
 article {
-  margin: 30px auto 0px auto;
-  max-width: 520px;
-  font-size: 16px; }
+  max-width: 850px; }
   article p {
     line-height: 1.8;
-    color: #7A848D;
+    color: #4a5157;
     margin: 0px 0px 20px 0px; }
   article h3 {
     font-weight: 500;
     color: #010101;
     margin: 0px 0px 20px 0px; }
-  article a {
-    display: inline-block;
-    color: #1055FF;
-    font-weight: 500;
-    text-decoration: none;
+
+a {
+  display: inline-block;
+  color: #1055FF;
+  font-weight: 500;
+  text-decoration: none;
+  -moz-transition: all 350ms ease;
+  -webkit-transition: all 350ms ease;
+  -o-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  a:hover {
+    color: #010101;
     -moz-transition: all 350ms ease;
     -webkit-transition: all 350ms ease;
     -o-transition: all 350ms ease;
-    transition: all 350ms ease; }
-    article a:hover {
-      color: #010101;
-      -moz-transition: all 350ms ease;
-      -webkit-transition: all 350ms ease;
-      -o-transition: all 350ms ease;
-      transition: all 350ms ease;
-      -ms-transform: rotate(3deg);
-      -webkit-transform: rotate(3deg);
-      transform: rotate(3deg); }
-  article ul {
-    list-style: disc;
-    padding: 0px 0px 0px 20px; }
-    article ul li {
-      line-height: 1.8;
-      color: #7A848D; }
+    transition: all 350ms ease;
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
+
+ul {
+  list-style: disc;
+  padding: 0px 0px 0px 20px; }
+  ul li {
+    line-height: 1.8;
+    color: #7A848D; }
 
 .notification {
   margin: 30px auto 0px auto;
@@ -2469,6 +2468,16 @@ article {
   border-radius: 5px; }
   .notification strong {
     font-weight: 700; }
+
+footer {
+  margin: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
+  max-width: 500px;
+  border-top: 2px solid #ccd0d4; }
+  footer p {
+    line-height: 1.8;
+    color: #7A848D;
+    margin: 0px 0px 20px 0px; }
 
 body.outside {
   background-color: #252924;
@@ -2641,142 +2650,9 @@ body.outside {
   body.outside .hike-block h3 {
     padding: 1px 0px 10px 40px; } }
 
-@media all and (max-width: 990px) {
-  .badge {
-    width: auto;
-    right: auto;
-    left: 30px; }
-  .hero {
-    padding: 40px 30px; }
-  .work {
-    padding: 40px 30px;
-    margin: 0px 0px 40px 0px; }
-  .main-footer {
-    margin: 0px 0px 40px 0px;
-    padding: 0px 30px; }
-  .other-work .row a {
-    display: none; } }
-
-@media all and (max-width: 800px) {
-  .grid {
-    width: 100%;
-    min-width: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
-  [class*='col-'] {
-    width: auto;
-    float: none;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px; }
-    [class*='col-']:last-of-type {
-      margin: 0px; }
-  .other-work .row .year {
-    float: none;
-    font-size: 12px;
-    color: #7A848D;
-    margin: 0px 0px 10px 0px; }
-  .other-work .row .name {
-    float: none;
-    margin: 0px 0px 10px 0px;
-    line-height: 1.5; }
-  .other-work .row .type {
-    float: none;
-    display: block;
-    margin: 0px; }
-  .masthead h1 {
-    line-height: 1.5; }
-  .insp {
-    margin: 0px 0px 40px 0px;
-    padding: 40px 30px; }
-    .insp .row span {
-      display: block;
-      float: none;
-      margin: 0px 0px 10px 0px; }
-      .insp .row span:last-of-type {
-        margin: 0px 0px 10px 0px; }
-    .insp .row .name,
-    .insp .row .author {
-      line-height: 1.5; }
-  .previously-played {
-    padding: 40px 30px; }
-    .previously-played h1 {
-      line-height: 1.5; }
-    .previously-played .row span {
-      display: block;
-      float: none;
-      margin: 0px 0px 10px 0px; }
-      .previously-played .row span:first-of-type {
-        margin: 0px 10px 0px 0px; }
-    .previously-played .row .album,
-    .previously-played .row .artist {
-      line-height: 1.5; }
-  .neue-masthead {
-    padding: 50px 20px; } }
-
-@media all and (max-width: 560px) {
-  .badge {
-    text-align: center;
-    right: 20px;
-    left: 20px; }
-  .playing .player .album {
-    padding: 20px 60px 10px 20px; }
-  .main-header {
-    padding: 20px 20px 15px 20px;
-    border-bottom: 1px solid white; }
-    .main-header nav {
-      display: none;
-      position: fixed;
-      padding: 50px 0px;
-      top: 0px;
-      height: 100%;
-      width: 100%;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      z-index: 998;
-      margin: 0px;
-      background-color: #131419; }
-      .main-header nav a {
-        text-align: center;
-        display: block;
-        font-size: 22px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        font-weight: 300;
-        margin: 0px 0px 20px 0px;
-        color: #FFFFFF; }
-    .main-header .menu {
-      display: block;
-      z-index: 999; }
-    .main-header .w {
-      color: #FFFFFF; }
-  .inspiration .main-header {
-    border-bottom: 1px solid #4a5157; }
-  .neue-masthead .logo,
-  .masthead .logo {
-    background: url("../img/logo.svg");
-    height: 25px;
-    width: 25px;
-    background-size: 25px 25px;
-    margin-bottom: 20px; }
-  .neue-masthead h1,
-  .masthead h1 {
-    font-size: 25px; }
-  .neue-masthead h2,
-  .masthead h2 {
-    margin: 0px 0px 10px 0px; }
-  .neue-masthead nav a,
-  .masthead nav a {
-    display: block;
-    margin: 0px 0px 10px 0px;
-    padding: 0px 0px 10px 0px;
-    border-bottom: 1px solid white; }
-    .neue-masthead nav a:last-of-type,
-    .masthead nav a:last-of-type {
-      margin: 0px;
-      padding: 0px;
-      border: 0px; } }
+@media all and (max-width: 550px) {
+  body {
+    padding: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 400; } }
