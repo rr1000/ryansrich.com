@@ -25,3 +25,17 @@
 <meta property="twitter:title" content="<%= current_page.data.title %>">
 <meta property="twitter:description" content="<%= current_page.data.sum %>">
 <link rel="stylesheet" href="/assets/css/styles.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script>
+    // Lol jquery for this? Really dude?
+    $('document').ready(function(){
+        var m1 = $('.inner-nav');
+        var m2 = $('.info');
+        var button =  $('.button-menu');
+
+        button.click(function(){
+            m1.fadeToggle(250);
+            m2.fadeToggle(250);
+        });
+    });
+</script>
