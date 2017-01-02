@@ -20,8 +20,9 @@ blockquote:before, blockquote:after,
 q:before, q:after{content: '';content: none;}
 table{border-collapse: collapse;border-spacing: 0;}
 
-// Fonts
+// Fonts & Icons
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+@import 'icons';
 
 // Deep fallbacks
 $font-family-alt: 'Inconsolata', monospace;
@@ -132,9 +133,20 @@ a{
 html{height: 100%;}
 
 // On with the show
+a.latest-post{
+    color: $color_yellow;
+    font-family: $font-family-alt;
+}
+.hr{
+    max-width: 3.25rem;
+    height: 0.125rem;
+    margin: 1.5rem 0;
+    background-color: $color_gray;
+    @include border-radius(0.0625rem);
+}
 nav{
     padding: 1.5rem;
-    background-color: lighten($color_dark, 3%);
+    background-color: lighten($color_dark, 1%);
     position: relative;
     @extend .cf;
     a.logo{
@@ -153,8 +165,7 @@ nav{
         display: block;
         margin: 0 0.8rem 0 0;
         padding: 0.3rem 0.5rem;
-        color: $color_dark-blue;
-        font-weight: 300;
+        color: $color_gray;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-size: 80%;
@@ -183,6 +194,18 @@ nav{
     float: right;
     margin: 0.08rem 0 0 0;
 }
+.viz{
+    background: url('/assets/img/viz.svg');
+    width: 6.25rem;
+    height: 2.563rem;
+    background-size: 6.25rem 2.563rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 section{
     width: 100%;
     max-width: 50rem;
@@ -192,9 +215,9 @@ section{
     padding: 3rem;
     flex: 1;
     a{
-        color: $color_dark-blue;
+        color: $color_gray;
         display: inline-block;
-        &:hover{@include transform(rotate(3deg));}
+        &:hover{@include transform(translate(2px, 0px));}
     }
 }
 h3{
@@ -235,7 +258,7 @@ footer{
         float: left;
         display: block;
         margin: 0 0.8rem 0 0;
-        color: $color_dark-blue;
+        color: $color_gray;
         font-weight: 300;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -301,7 +324,7 @@ footer{
         .block{margin: 0 0 1.5rem 0;}
     }
 }
-@media all and(max-width: 520px){
+@media all and(max-width: 51.25rem){
     .button-menu{display: block;}
     .info,
     .inner-nav{
