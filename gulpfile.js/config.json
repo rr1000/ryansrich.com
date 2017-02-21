@@ -1,0 +1,70 @@
+{
+    "root": {
+        "src": "./source",
+        "dest": "./.Temp"
+    },
+
+    "tasks": {
+        "browserSync": {
+            "proxy": "http://localhost:4567",
+            "reloadDelay" : 1000,
+            "files": ["./source/**/*.{erb,html,md,scss,css}"]
+        },
+
+        "static": {
+            "src": "public",
+            "dest": "./"
+        },
+
+        "js": {
+            "src": "assets/js",
+            "dest": "assets/js",
+            "entries": {
+                "all": ["./all.js"]
+            },
+            "extensions": ["js", "coffee", "json"],
+            "babel": {
+                "presets": ["es2015", "stage-1"],
+                "plugins": []
+            },
+            "extractSharedJs": false
+        },
+
+        "css": {
+            "src": "assets/scss",
+            "dest": "assets/scss",
+            "autoprefixer": {
+                "browsers": ["last 3 version"]
+            },
+            "sass": {
+                "indentedSyntax": false,
+                "includePaths": [],
+                "precision": 10
+            },
+            "extensions": ["sass", "scss", "css"]
+        },
+
+        "html": {
+            "src": "./",
+            "dest": "./",
+            "extensions": ["html", "erb", "haml", "md", "yml"],
+            "excludeFolders": ["assets/img", "assets/js", "assets/scss"]
+        },
+
+        "images": {
+            "src": "assets/img",
+            "dest": "assets/img",
+            "extensions": ["jpg", "png", "svg", "gif"]
+        },
+
+        "fonts": {
+            "src": "assets/fonts",
+            "dest": "assets/fonts",
+            "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+        },
+
+        "production": {
+            "rev": false
+        }
+    }
+}

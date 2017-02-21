@@ -1,0 +1,27 @@
+@mixin border-radius($r){
+     -webkit-border-radius: ($r);
+     -moz-border-radius: ($r);
+     border-radius: ($r);
+}
+@mixin easing($s){
+    -moz-transition: all $s ease;
+    -webkit-transition: all $s ease;
+    -o-transition: all $s ease;
+    transition: all $s ease
+}
+@mixin transform($t){
+    -ms-transform: $t;
+    -webkit-transform: $t;
+    transform: $t;
+}
+@mixin clearfix(){
+    &:after{
+        content:" ";
+        display:table;
+        clear:both;
+    }
+}
+@function rem-calc($s){
+    $remSize: $s / 16px;
+    @return #{$remSize}rem;
+}

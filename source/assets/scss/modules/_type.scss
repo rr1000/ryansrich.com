@@ -1,0 +1,27 @@
+@font-face{
+    src: url('/assets/fonts/fortescue-bold.woff') format('woff');
+    font-family: 'fortescue';
+    font-weight: 900;
+}
+@font-face{
+    src: url('/assets/fonts/fortescue-regular.woff') format('woff');
+    font-family: 'fortescue';
+    font-weight: 400;
+}
+
+$font-backup: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-sans: -apple-system, BlinkMacSystemFont, $font-backup;
+$font-display: "fortescue", serif, $font-backup;
+
+/* Sizes */
+$font-size-base: 1rem;
+$font-size-small: 0.875rem;
+$font-size-x-small: 0.75rem;
+
+/* Colors */
+.text-on-dark{color: $color-white;}
+.text-on-dark-alt{color: $color-text;}
+.color-text-dark{color: $color-text-dark;}
+/* Sizes */
+.x-small-text{font-size: $font-size-x-small}
+.small-text{font-size: $font-size-small}

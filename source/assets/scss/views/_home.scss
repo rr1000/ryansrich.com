@@ -1,0 +1,11 @@
+.vertical-text{
+    font-size: $font-size-x-small;
+    color: $color-text-dark-low-contrast;
+    position: absolute;
+    left: rem-calc(-84px);
+    top: rem-calc(261px);
+    @include transform(rotate(-90deg));
+    @media all and (max-width: rem-calc(500px)){
+        top: rem-calc(286px);
+    }
+}
