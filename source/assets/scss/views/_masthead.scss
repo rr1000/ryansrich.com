@@ -1,60 +1,10 @@
-.main-header{
-    padding: 2rem 3rem;
-    font-size: rem-calc(14px);
-    nav{
-        a{
-            display: inline-block;
-            margin: 0 0 0 2rem;
-            text-decoration: underline;
-        }
-    }
-    a{
-        color: $color-dark;
-        &:hover{
-            color: darken($color-yellow, 10%);
-        }
-    }
-    #hello{
-        color: $color-dark;
-        background-color: $color-yellow;
-    }
-    @media all and (max-width: rem-calc(500px)){
-        div{
-            display: block;
-            width: 100%;
-            nav{
-                margin: 1rem 0;
-                a{
-                    margin: 0 2rem 0 0;
-                }
-            }
-            a{
-                color: $color-dark;
-                &:hover{
-                    color: darken($color-yellow, 10%);
-                }
-            }
-            #hello{
-                color: $color-dark;
-                background-color: lighten($color-yellow, 20%);
-                padding: 0.5rem;
-            }
-        }
-    }
-}
 .masthead{
+    padding: 2rem 4rem;
     a{
         color: $color-dark;
         &:hover{
             color: darken($color-yellow, 10%);
         }
-    }
-    padding: 3rem 2rem;
-    @media all and (max-width: rem-calc(1023px)){
-        padding: 3rem 2rem 3rem 5rem;
-    }
-    @media all and (max-width: rem-calc(500px)){
-        padding: 0 1.5rem 1.5rem 4.5rem;
     }
     h1{
         text-align: left;
@@ -73,13 +23,11 @@
         }
     }
     h2{
-        margin: 0;
+        margin: 0 0 1rem 0;
         color: $color-text-dark;
         font-size: 1rem;
         text-align: left;
-        font-size: $font-size-small;
-        max-width: 50%;
-        line-height: 1.5;
+        line-height: 1.8;
         a{
             color: $color-dark;
             &:hover{

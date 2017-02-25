@@ -1,0 +1,122 @@
+.border{
+    height: rem-calc(3px);
+    background-image: -webkit-linear-gradient(left, #8EEAFF 0%, #7085FF 30%, #BF74FF 69%, #FF27B1 100%);
+    background-image: -o-linear-gradient(left, #8EEAFF 0%, #7085FF 30%, #BF74FF 69%, #FF27B1 100%);
+    background-image: linear-gradient(to right, #8EEAFF 0%, #7085FF 30%, #BF74FF 69%, #FF27B1 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.main-header{
+    padding: 2rem 4rem;
+    font-size: rem-calc(14px);
+    nav{
+        a{
+            display: inline-block;
+            margin: 0 0 0 2rem;
+            text-decoration: underline;
+        }
+    }
+    a{
+        color: $color-dark;
+        &:hover{
+            color: darken($color-yellow, 10%);
+        }
+    }
+    .logo{
+        height: 1.2rem;
+        width: 1.2rem;
+        margin: 0;
+        background-color: $color-white;
+        border: rem-calc(2px) solid $color-blue;
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+        -webkit-animation: blip 5s infinite;
+        animation: blip 5s infinite;
+    }
+    #hello{
+        padding: 0.2rem;
+        color: $color-dark;
+        background-color: $color-yellow;
+    }
+    @media all and (max-width: rem-calc(500px)){
+        div{
+            display: block;
+            width: 100%;
+            nav{
+                margin: 1rem 0;
+                a{
+                    margin: 0 2rem 0 0;
+                }
+            }
+            a{
+                color: $color-dark;
+                &:hover{
+                    color: darken($color-yellow, 10%);
+                }
+            }
+            #hello{
+                color: $color-dark;
+                background-color: lighten($color-yellow, 20%);
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+@-webkit-keyframes blip{
+    0%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+    25%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 0%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+    50%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 0%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+    75%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 0%);
+    }
+    100%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+}
+@keyframes blip{
+    0%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+    25%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 0%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+    50%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 0%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+    75%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 0%);
+    }
+    100%{
+        box-shadow: 0.2rem 0.2rem 0 lighten($color-blue, 15%),
+                    0.4rem 0.4rem 0 lighten($color-blue, 25%),
+                    0.6rem 0.6rem 0 lighten($color-blue, 35%);
+    }
+}
