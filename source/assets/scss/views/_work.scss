@@ -1,0 +1,43 @@
+.block{
+    padding: 5rem 4rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom: rem-calc(1px) solid $color-yellow;
+    .r{position: relative;}
+    img.work-logo{
+        display: block;
+        position: absolute;
+        left: 0;
+        max-width: rem-calc(150px);
+        height: rem-calc(50px);
+    }
+    h1{
+        font-size: 2rem;
+        font-family: $font-display;
+        font-weight: 900;
+        margin: 0 0 1rem 0;
+    }
+    h2{
+        margin: 0 0 1rem 0;
+        font-weight: 300;
+        font-style: italic;
+    }
+    p{
+        font-size: $font-size-small;
+        line-height: 1.5;
+        margin: 0 0 1rem 0;
+    }
+    a{
+        font-size: $font-size-small;
+        text-decoration: underline;
+    }
+    background-color: $color-white;
+    color: $color-dark;
+    p{opacity: 0.5;}
+    a{
+        color: $color-dark;
+        &:hover{
+            color: $color-yellow;
+        }
+    }
+}
