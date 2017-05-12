@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/ryansrich
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rrich.io
+  * I am ryansrich (https://keybase.io/ryansrich) on keybase.
+  * I have a public key ASC4wKQaqqLvx_X7_qILGLCnCbwaC6dSsNZbENjeeyqyFAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120b3c1f3db96aa3758820f2ae615d4073f116f702cee0f139f280b636f12159a230a",
+            "host": "keybase.io",
+            "kid": "0120b8c0a41aaaa2efc7f5fbfea20b18b0a709bc1a0ba752b0d65b10d8de7b2ab2140a",
+            "uid": "c1b09d6ab23afca979696d6dc5633819",
+            "username": "ryansrich"
+        },
+        "service": {
+            "hostname": "rrich.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1494548440,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1494548427,
+        "hash": "0c32afab4a1ce9788346c564f54b966182094793d37ea82a9635e37ec8705b8d2a7547b1a595296f7779f597bf83d2c9f053c02debdb374096f000aaf82f33df",
+        "seqno": 1068310
+    },
+    "prev": "514232ba33f07b08ddb3b7abd9216e383464d26e610620b5f04180a9a7f853db",
+    "seqno": 16,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEguMCkGqqi78f1+/6iCxiwpwm8GgunUrDWWxDY3nsqshQKp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjNjMWYzZGI5NmFhMzc1ODgyMGYyYWU2MTVkNDA3M2YxMTZmNzAyY2VlMGYxMzlmMjgwYjYzNmYxMjE1OWEyMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjhjMGE0MWFhYWEyZWZjN2Y1ZmJmZWEyMGIxOGIwYTcwOWJjMWEwYmE3NTJiMGQ2NWIxMGQ4ZGU3YjJhYjIxNDBhIiwidWlkIjoiYzFiMDlkNmFiMjNhZmNhOTc5Njk2ZDZkYzU2MzM4MTkiLCJ1c2VybmFtZSI6InJ5YW5zcmljaCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicnJpY2guaW8iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIyIn0sImN0aW1lIjoxNDk0NTQ4NDQwLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTQ1NDg0MjcsImhhc2giOiIwYzMyYWZhYjRhMWNlOTc4ODM0NmM1NjRmNTRiOTY2MTgyMDk0NzkzZDM3ZWE4MmE5NjM1ZTM3ZWM4NzA1YjhkMmE3NTQ3YjFhNTk1Mjk2Zjc3NzlmNTk3YmY4M2QyYzlmMDUzYzAyZGViZGIzNzQwOTZmMDAwYWFmODJmMzNkZiIsInNlcW5vIjoxMDY4MzEwfSwicHJldiI6IjUxNDIzMmJhMzNmMDdiMDhkZGIzYjdhYmQ5MjE2ZTM4MzQ2NGQyNmU2MTA2MjBiNWYwNDE4MGE5YTdmODUzZGIiLCJzZXFubyI6MTYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAUj9ir+BxQ6xn6NMWnMmo/G0ySu5vukAPoa50gpfsV3TmxiJ7UZzeQfMnt792u8R++B3gK5qTT1gApLZWidD2BqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEgg8wMDYo7/ku3ib9xNryBIdAeikfGkXfDcO+Emh67io3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ryansrich
+
+==================================================================

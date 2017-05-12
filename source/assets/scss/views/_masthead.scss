@@ -58,14 +58,14 @@
     }
     h1{
         text-align: left;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         color: $color-blue;
         font-family: $font-display;
         font-weight: 400;
         line-height: 1.8;
-        margin: 0 0 1.2rem 0;
-        @media all and (max-width: rem-calc(1023px)){font-size: 1.5rem;}
-        @media all and (max-width: rem-calc(450px)){font-size: 1.2rem;}
+        margin: 0 auto 1.2rem auto;
+        max-width: 65%;
+        @media all and (max-width: rem-calc(850px)){max-width: 100%;}
         a{
             color: $color-blue;
             text-decoration: underline;
@@ -78,7 +78,9 @@
         font-size: 1rem;
         text-align: left;
         font-size: $font-size-small;
-        max-width: 50%;
+        max-width: 65%;
+        @media all and (max-width: rem-calc(850px)){max-width: 100%;}
+        margin: 0 auto;
         line-height: 1.5;
         a{
             color: $color-dark;

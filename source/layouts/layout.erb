@@ -7,6 +7,9 @@
         <title><%= current_page.data.title %> | rrich.io</title>
         <meta name="description" content="<%= current_page.data.description %>">
         <%= stylesheet_link_tag 'styles.css' %>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" href="/touchicon.png">
     </head>
     <body class="<%= page_classes %>">
         <%= yield %>
