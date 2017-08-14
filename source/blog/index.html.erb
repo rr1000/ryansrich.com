@@ -1,0 +1,21 @@
+---
+title: Blog
+---
+<%= partial "partials/bar" %>
+<section class="masthead">
+  <header>
+    <h1><a href="/">Home /</a> Blog</h1>
+    <h2>Fitting ideas into tiny boxes on screen.</h2>
+  </header>
+  <article>
+    <ul>
+      <% blog.articles[0...5].each do |article| %>
+        <li>
+          <div class="left"><%= article.date.strftime('%b %e %Y') %></div>
+          <div class="left"><a href="<%= article.url %>"><%= article.title %></a></div>
+        </li>
+      <% end %>
+    </ul>
+  </article>
+  <%= partial "partials/footer" %>
+</section>

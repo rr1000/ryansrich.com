@@ -1,0 +1,54 @@
+.content{
+  @extend .masthead;
+  max-width: 650px;
+  article{
+    color: $color-blue-alt;
+    h1,h2,h3,h4,h5,p{
+      line-height: 1.2;
+      margin: 0 0 1rem 0;
+    }
+    p{line-height: 1.5;color: lighten($color-blue-alt, 10%)}
+    ul,li,a,img,{
+      line-height: 1.2;
+    }
+    h1{
+      font-size: 20px;
+      font-weight: 900;
+    }
+    h2{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    h3{
+      font-size: 18px;
+      color: $color-blue-light;
+    }
+    h4{
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    strong{
+      font-weight: 900;
+    }
+    em{
+      font-style: italic;
+    }
+    blockquote{
+      padding: 0 0 0 1rem;
+      border-left: 2px solid lighten($color-blue-light, 20%);
+      font-style: italic;
+    }
+    ul{
+      list-style: disc;
+      margin: 0 0 1rem 1rem;
+      padding: 0 0 0 1rem;
+      li{
+        color: lighten($color-blue-alt, 10%);
+        margin: 0 0 0.5rem 0;
+        line-height: 1.5rem;
+        &:last-of-type{margin: 0;}
+      }
+    }
+  }
+}

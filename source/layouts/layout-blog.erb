@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <title><%= current_page.data.title %> | rrich.io</title>
+        <meta name="description" content="<%= current_page.data.description %>">
+        <%= stylesheet_link_tag 'styles.css' %>
+        <%= stylesheet_link_tag 'syntax.css' %>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="apple-touch-icon" type="image/png" href="/touchicon.png">
+    </head>
+    <body class="<%= page_classes %>">
+      <%= partial "partials/bar" %>
+      <section class="content">
+        <header>
+          <h1><a href="/">Home /</a><a href="/blog"> Blog /</a></h1>
+          <h1><%= current_page.data.title %></h1>
+          <h2><%= current_page.date.strftime('%b %e %Y') %></h2>
+        </header>
+        <article>
+          <%= yield %>
+        </article>
+        <%= partial "partials/footer" %>
+      </section>
+        <%= javascript_include_tag 'all.js' %>
+    </body>
+</html>
